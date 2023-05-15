@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package main
 
@@ -36,13 +36,13 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/genutil"
 	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
 
-	ethermint "github.com/gridiron/ethermint/types"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
+	ethermint "github.com/gridchain/ethermint/types"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
 
-	gridironkr "github.com/gridiron/gridiron/v11/crypto/keyring"
+	gridironkr "github.com/gridchain/gridiron/v11/crypto/keyring"
 
-	vestingcli "github.com/gridiron/gridiron/v11/x/vesting/client/cli"
-	vestingtypes "github.com/gridiron/gridiron/v11/x/vesting/types"
+	vestingcli "github.com/gridchain/gridiron/v11/x/vesting/client/cli"
+	vestingtypes "github.com/gridchain/gridiron/v11/x/vesting/types"
 )
 
 const (

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package keeper
 
@@ -24,9 +24,9 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v6/modules/core/04-channel/types"
 	"github.com/cosmos/ibc-go/v6/modules/core/exported"
 
-	"github.com/gridiron/gridiron/v11/ibc"
-	gridiron "github.com/gridiron/gridiron/v11/types"
-	"github.com/gridiron/gridiron/v11/x/claims/types"
+	"github.com/gridchain/gridiron/v11/ibc"
+	gridiron "github.com/gridchain/gridiron/v11/types"
+	"github.com/gridchain/gridiron/v11/x/claims/types"
 )
 
 // OnAcknowledgementPacket performs an IBC send callback. Once a user submits an

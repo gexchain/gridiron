@@ -12,14 +12,14 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package testutil
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
-	inflationtypes "github.com/gridiron/gridiron/v11/x/inflation/types"
+	inflationtypes "github.com/gridchain/gridiron/v11/x/inflation/types"
 )
 
 // FundAccount is a utility function that funds an account by minting and

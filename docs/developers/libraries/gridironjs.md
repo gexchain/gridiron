@@ -6,7 +6,7 @@ order: 1
 
 Learn about the GridironJS Library for connecting clients to Gridiron. {synopsis}
 
-[`gridironjs`](https://github.com/gridiron/gridironjs) is a JavaScript and TypeScript client library for [Gridiron](https://github.com/gridiron/gridiron) and [Ethermint](https://github.com/gridiron/ethermint) nodes.
+[`gridironjs`](https://github.com/gridchain/gridironjs) is a JavaScript and TypeScript client library for [Gridiron](https://github.com/gridchain/gridiron) and [Ethermint](https://github.com/gridchain/ethermint) nodes.
 
 ## Tools
 

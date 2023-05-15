@@ -9,9 +9,9 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	sdkvesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/gridiron/v11/testutil"
-	"github.com/gridiron/gridiron/v11/x/vesting/types"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/gridiron/v11/testutil"
+	"github.com/gridchain/gridiron/v11/x/vesting/types"
 )
 
 var (

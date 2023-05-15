@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/gridiron/v11/x/revenue/types"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/gridiron/v11/x/revenue/types"
 )
 
 func (suite *KeeperTestSuite) TestRevenues() {

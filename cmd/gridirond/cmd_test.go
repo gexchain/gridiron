@@ -9,8 +9,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gridiron/gridiron/v11/app"
-	gridirond "github.com/gridiron/gridiron/v11/cmd/gridirond"
+	"github.com/gridchain/gridiron/v11/app"
+	gridirond "github.com/gridchain/gridiron/v11/cmd/gridirond"
 )
 
 func TestInitCmd(t *testing.T) {

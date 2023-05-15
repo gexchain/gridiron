@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package types
 
@@ -27,8 +27,8 @@ import (
 )
 
 var (
-	// DefaultClaimsDenom is agridiron
-	DefaultClaimsDenom = "agridiron"
+	// DefaultClaimsDenom is afury
+	DefaultClaimsDenom = "afury"
 	// DefaultDurationUntilDecay is 1 month = 30.4375 days
 	DefaultDurationUntilDecay = 2629800 * time.Second
 	// DefaultDurationOfDecay is 2 months

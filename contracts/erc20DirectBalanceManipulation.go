@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 
 	"github.com/ethereum/go-ethereum/common"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
 
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 )
 
 // This is an evil token. Whenever an A -> B transfer is called,

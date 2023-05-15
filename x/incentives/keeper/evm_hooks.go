@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package keeper
 
@@ -24,10 +24,10 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	ethermint "github.com/gridiron/ethermint/types"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
+	ethermint "github.com/gridchain/ethermint/types"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
 
-	"github.com/gridiron/gridiron/v11/x/incentives/types"
+	"github.com/gridchain/gridiron/v11/x/incentives/types"
 )
 
 var _ evmtypes.EvmHooks = Hooks{}

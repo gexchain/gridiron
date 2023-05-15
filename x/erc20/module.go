@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package erc20
 
@@ -34,9 +34,9 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/gridiron/gridiron/v11/x/erc20/client/cli"
-	"github.com/gridiron/gridiron/v11/x/erc20/keeper"
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/client/cli"
+	"github.com/gridchain/gridiron/v11/x/erc20/keeper"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 )
 
 // type check to ensure the interface is properly implemented

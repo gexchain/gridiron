@@ -8,9 +8,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/gridiron/v11/testutil"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/gridiron/v11/testutil"
 	"github.com/stretchr/testify/mock"
 
 	transfertypes "github.com/cosmos/ibc-go/v6/modules/apps/transfer/types"
@@ -19,11 +19,11 @@ import (
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 	ibcmock "github.com/cosmos/ibc-go/v6/testing/mock"
 
-	claimstypes "github.com/gridiron/gridiron/v11/x/claims/types"
-	incentivestypes "github.com/gridiron/gridiron/v11/x/incentives/types"
-	"github.com/gridiron/gridiron/v11/x/recovery/keeper"
-	"github.com/gridiron/gridiron/v11/x/recovery/types"
-	vestingtypes "github.com/gridiron/gridiron/v11/x/vesting/types"
+	claimstypes "github.com/gridchain/gridiron/v11/x/claims/types"
+	incentivestypes "github.com/gridchain/gridiron/v11/x/incentives/types"
+	"github.com/gridchain/gridiron/v11/x/recovery/keeper"
+	"github.com/gridchain/gridiron/v11/x/recovery/types"
+	vestingtypes "github.com/gridchain/gridiron/v11/x/vesting/types"
 )
 
 func (suite *KeeperTestSuite) TestOnRecvPacket() {
@@ -53,7 +53,7 @@ func (suite *KeeperTestSuite) TestOnRecvPacket() {
 	expAck := ibcmock.MockAcknowledgement
 
 	coins := sdk.NewCoins(
-		sdk.NewCoin("agridiron", sdk.NewInt(1000)),
+		sdk.NewCoin("afury", sdk.NewInt(1000)),
 		sdk.NewCoin(ibcAtomDenom, sdk.NewInt(1000)),
 		sdk.NewCoin(ibcOsmoDenom, sdk.NewInt(1000)),
 		sdk.NewCoin(erc20Denom, sdk.NewInt(1000)),
@@ -361,14 +361,14 @@ func (suite *KeeperTestSuite) TestGetIBCDenomDestinationIdentifiers() {
 	}{
 		{
 			"invalid native denom",
-			"agridiron",
+			"afury",
 			func() {},
 			true,
 			"", "",
 		},
 		{
 			"invalid IBC denom hash",
-			"ibc/agridiron",
+			"ibc/afury",
 			func() {},
 			true,
 			"", "",
@@ -583,7 +583,7 @@ func (suite *KeeperTestSuite) TestOnRecvPacketFailTransfer() {
 
 			// Fund receiver account with GRIDIRON
 			coins := sdk.NewCoins(
-				sdk.NewCoin("agridiron", sdk.NewInt(1000)),
+				sdk.NewCoin("afury", sdk.NewInt(1000)),
 				sdk.NewCoin(ibcAtomDenom, sdk.NewInt(1000)),
 			)
 			err := testutil.FundAccount(suite.ctx, suite.app.BankKeeper, secpAddr, coins)

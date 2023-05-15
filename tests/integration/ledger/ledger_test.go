@@ -9,12 +9,12 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 
-	"github.com/gridiron/ethermint/crypto/hd"
-	"github.com/gridiron/ethermint/encoding"
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/gridiron/v11/app"
-	"github.com/gridiron/gridiron/v11/tests/integration/ledger/mocks"
-	"github.com/gridiron/gridiron/v11/testutil"
+	"github.com/gridchain/ethermint/crypto/hd"
+	"github.com/gridchain/ethermint/encoding"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/gridiron/v11/app"
+	"github.com/gridchain/gridiron/v11/tests/integration/ledger/mocks"
+	"github.com/gridchain/gridiron/v11/testutil"
 
 	"github.com/spf13/cobra"
 
@@ -174,7 +174,7 @@ var _ = Describe("Ledger CLI and keyring functionality: ", func() {
 						s.app.BankKeeper,
 						s.accAddr,
 						sdk.NewCoins(
-							sdk.NewCoin("agridiron", sdk.NewInt(100000000000000)),
+							sdk.NewCoin("afury", sdk.NewInt(100000000000000)),
 						),
 					)
 					s.Require().NoError(err)
@@ -199,7 +199,7 @@ var _ = Describe("Ledger CLI and keyring functionality: ", func() {
 					cmd.SetArgs([]string{
 						ledgerKey,
 						receiverAccAddr.String(),
-						sdk.NewCoin("agridiron", sdk.NewInt(1000)).String(),
+						sdk.NewCoin("afury", sdk.NewInt(1000)).String(),
 						s.FormatFlag(flags.FlagUseLedger),
 						s.FormatFlag(flags.FlagSkipConfirmation),
 					})
@@ -217,7 +217,7 @@ var _ = Describe("Ledger CLI and keyring functionality: ", func() {
 					cmd.SetArgs([]string{
 						ledgerKey,
 						receiverAccAddr.String(),
-						sdk.NewCoin("agridiron", sdk.NewInt(1000)).String(),
+						sdk.NewCoin("afury", sdk.NewInt(1000)).String(),
 						s.FormatFlag(flags.FlagUseLedger),
 						s.FormatFlag(flags.FlagSkipConfirmation),
 					})

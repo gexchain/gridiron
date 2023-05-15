@@ -4,7 +4,7 @@ package gridiron.erc20.v1;
 import "gridiron/erc20/v1/erc20.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/gridiron/gridiron/v11/x/erc20/types";
+option go_package = "github.com/gridchain/gridiron/v11/x/erc20/types";
 
 // GenesisState defines the module's genesis state.
 message GenesisState {

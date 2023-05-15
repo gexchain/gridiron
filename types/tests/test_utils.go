@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package tests
 
@@ -35,7 +35,7 @@ var (
 
 	UgridironDenomtrace = transfertypes.DenomTrace{
 		Path:      "transfer/channel-0",
-		BaseDenom: "agridiron",
+		BaseDenom: "afury",
 	}
 	UgridironIbcdenom = UgridironDenomtrace.IBCDenom()
 
@@ -47,7 +47,7 @@ var (
 
 	AgridironDenomtrace = transfertypes.DenomTrace{
 		Path:      "transfer/channel-0",
-		BaseDenom: "agridiron",
+		BaseDenom: "afury",
 	}
 	AgridironIbcdenom = AgridironDenomtrace.IBCDenom()
 )

@@ -11,10 +11,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/ethermint/x/evm/statedb"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/ethermint/x/evm/statedb"
 
-	"github.com/gridiron/gridiron/v11/x/revenue/types"
+	"github.com/gridchain/gridiron/v11/x/revenue/types"
 )
 
 func (suite *KeeperTestSuite) TestRegisterRevenue() {

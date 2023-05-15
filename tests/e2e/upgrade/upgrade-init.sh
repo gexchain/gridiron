@@ -26,12 +26,12 @@ gridirond keys add "$KEY" --keyring-backend $KEYRING --algo "$KEYALGO"
 # Set moniker and chain-id for Gridiron (Moniker can be anything, chain-id must be an integer)
 gridirond init "$MONIKER" --chain-id "$CHAINID"
 
-# Change parameter token denominations to agridiron
-cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["staking"]["params"]["bond_denom"]="agridiron"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
-cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["crisis"]["constant_fee"]["denom"]="agridiron"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
-cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["gov"]["deposit_params"]["min_deposit"][0]["denom"]="agridiron"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
-cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["evm"]["params"]["evm_denom"]="agridiron"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
-cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["inflation"]["params"]["mint_denom"]="agridiron"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
+# Change parameter token denominations to afury
+cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["staking"]["params"]["bond_denom"]="afury"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
+cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["crisis"]["constant_fee"]["denom"]="afury"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
+cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["gov"]["deposit_params"]["min_deposit"][0]["denom"]="afury"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
+cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["evm"]["params"]["evm_denom"]="afury"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
+cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["inflation"]["params"]["mint_denom"]="afury"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
 
 # set gov proposing && voting period
 cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["gov"]["deposit_params"]["max_deposit_period"]="30s"' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
@@ -55,7 +55,7 @@ cat "$HOME"/.gridirond/config/genesis.json | jq '.app_state["claims"]["params"][
 
 # Claim module account:
 # 0xA61808Fe40fEb8B3433778BBC2ecECCAA47c8c47 || gridiron15cvq3ljql6utxseh0zau9m8ve2j8erz89m5wkz
-cat "$HOME"/.gridirond/config/genesis.json | jq -r --arg amount_to_claim "$amount_to_claim" '.app_state["bank"]["balances"] += [{"address":"gridiron15cvq3ljql6utxseh0zau9m8ve2j8erz89m5wkz","coins":[{"denom":"agridiron", "amount":$amount_to_claim}]}]' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
+cat "$HOME"/.gridirond/config/genesis.json | jq -r --arg amount_to_claim "$amount_to_claim" '.app_state["bank"]["balances"] += [{"address":"gridiron15cvq3ljql6utxseh0zau9m8ve2j8erz89m5wkz","coins":[{"denom":"afury", "amount":$amount_to_claim}]}]' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
 
 # disable produce empty block
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -89,7 +89,7 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Allocate genesis accounts (cosmos formatted addresses)
-gridirond add-genesis-account $KEY 100000000000000000000000000agridiron --keyring-backend $KEYRING
+gridirond add-genesis-account $KEY 100000000000000000000000000afury --keyring-backend $KEYRING
 
 # Update total supply with claim values
 # Bc is required to add this big numbers
@@ -98,7 +98,7 @@ total_supply=100000000000000000000010000
 cat "$HOME"/.gridirond/config/genesis.json | jq -r --arg total_supply "$total_supply" '.app_state["bank"]["supply"][0]["amount"]=$total_supply' > "$HOME"/.gridirond/config/tmp_genesis.json && mv "$HOME"/.gridirond/config/tmp_genesis.json "$HOME"/.gridirond/config/genesis.json
 
 # Sign genesis transaction
-gridirond gentx $KEY 1000000000000000000000agridiron --keyring-backend $KEYRING --chain-id "$CHAINID"
+gridirond gentx $KEY 1000000000000000000000afury --keyring-backend $KEYRING --chain-id "$CHAINID"
 ## In case you want to create multiple validators at genesis
 ## 1. Back to `gridirond keys add` step, init more keys
 ## 2. Back to `gridirond add-genesis-account` step, add balance for those
@@ -117,4 +117,4 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Start the node (remove the --pruning=nothing flag if historical queries are not needed)
-gridirond start --pruning=nothing "$TRACE" --log_level $LOGLEVEL --minimum-gas-prices=0.0001agridiron --json-rpc.api eth,txpool,personal,net,debug,web3
+gridirond start --pruning=nothing "$TRACE" --log_level $LOGLEVEL --minimum-gas-prices=0.0001afury --json-rpc.api eth,txpool,personal,net,debug,web3

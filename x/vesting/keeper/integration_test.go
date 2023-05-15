@@ -8,11 +8,11 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/gridiron/ethermint/encoding"
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/gridiron/v11/app"
-	"github.com/gridiron/gridiron/v11/app/ante"
-	"github.com/gridiron/gridiron/v11/testutil"
+	"github.com/gridchain/ethermint/encoding"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/gridiron/v11/app"
+	"github.com/gridchain/gridiron/v11/app/ante"
+	"github.com/gridchain/gridiron/v11/testutil"
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
@@ -21,10 +21,10 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	sdkvesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
-	claimstypes "github.com/gridiron/gridiron/v11/x/claims/types"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
+	claimstypes "github.com/gridchain/gridiron/v11/x/claims/types"
 
-	"github.com/gridiron/gridiron/v11/x/vesting/types"
+	"github.com/gridchain/gridiron/v11/x/vesting/types"
 )
 
 // Clawback vesting with Cliff and Lock. In this case the cliff is reached

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package ante
 
@@ -28,10 +28,10 @@ import (
 	ibcante "github.com/cosmos/ibc-go/v6/modules/core/ante"
 	ibckeeper "github.com/cosmos/ibc-go/v6/modules/core/keeper"
 
-	ethante "github.com/gridiron/ethermint/app/ante"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
+	ethante "github.com/gridchain/ethermint/app/ante"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
 
-	vestingtypes "github.com/gridiron/gridiron/v11/x/vesting/types"
+	vestingtypes "github.com/gridchain/gridiron/v11/x/vesting/types"
 )
 
 // HandlerOptions defines the list of module keepers required to run the Gridiron

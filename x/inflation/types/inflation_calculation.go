@@ -12,14 +12,14 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package types
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	ethermint "github.com/gridiron/ethermint/types"
+	ethermint "github.com/gridchain/ethermint/types"
 )
 
 // CalculateEpochProvisions returns mint provision per epoch
@@ -57,7 +57,7 @@ func CalculateEpochMintProvision(
 
 	// Multiply epochMintProvision with power reduction (10^18 for gridiron) as the
 	// calculation is based on `gridiron` and the issued tokens need to be given in
-	// `agridiron`
+	// `afury`
 	epochProvision = epochProvision.Mul(sdk.NewDecFromInt(ethermint.PowerReduction))
 	return epochProvision
 }

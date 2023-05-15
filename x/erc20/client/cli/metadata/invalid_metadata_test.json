@@ -4,7 +4,7 @@
       "description": 1,
       "denom_units": [
         {
-          "denom": "agridiron",
+          "denom": "afury",
           "exponent": 0
         },
         {
@@ -12,9 +12,9 @@
           "exponent": 18
         }
       ],
-      "base": "agridiron",
-      "display": "agridiron",
-      "name": "agridiron",
+      "base": "afury",
+      "display": "afury",
+      "name": "afury",
       "symbol": "GRIDIRON"
     }
   ]

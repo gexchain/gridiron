@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/gridiron/ethermint/tests"
+	"github.com/gridchain/ethermint/tests"
 
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 )
 
 func (suite *KeeperTestSuite) TestMintingEnabled() {

@@ -1,6 +1,6 @@
 package keeper_test
 
-import "github.com/gridiron/gridiron/v11/x/revenue/types"
+import "github.com/gridchain/gridiron/v11/x/revenue/types"
 
 func (suite *KeeperTestSuite) TestParams() {
 	params := suite.app.RevenueKeeper.GetParams(suite.ctx)

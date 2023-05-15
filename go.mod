@@ -1,4 +1,4 @@
-module github.com/gridiron/gridiron/v11
+module github.com/gridchain/gridiron/v11
 
 go 1.19
 
@@ -12,8 +12,8 @@ require (
 	github.com/cosmos/gogoproto v1.4.3
 	github.com/cosmos/ibc-go/v6 v6.1.0
 	github.com/ethereum/go-ethereum v1.10.26
-	github.com/gridiron/ethermint v0.21.0
-	github.com/gridiron/gridiron-ledger-go v0.2.1
+	github.com/gridchain/ethermint v0.21.0
+	github.com/gridchain/gridiron-ledger-go v0.2.1
 	github.com/gogo/protobuf v1.3.3
 	github.com/golang/protobuf v1.5.2
 	github.com/gorilla/mux v1.8.0
@@ -216,7 +216,7 @@ replace (
 	// use cosmos keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.1.7-0.20210622111912-ef00f8ac3d76
 	// use Cosmos-SDK fork to enable Ledger functionality
-	github.com/cosmos/cosmos-sdk => github.com/gridiron/cosmos-sdk v0.46.8-ledger
+	github.com/cosmos/cosmos-sdk => github.com/gridchain/cosmos-sdk v0.46.8-ledger
 	// use cosmos flavored protobufs
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	// Informal Tendermint fork

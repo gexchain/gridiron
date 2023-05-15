@@ -13,10 +13,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	feemarkettypes "github.com/gridiron/ethermint/x/feemarket/types"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	feemarkettypes "github.com/gridchain/ethermint/x/feemarket/types"
 
-	"github.com/gridiron/gridiron/v11/app"
+	"github.com/gridchain/gridiron/v11/app"
 )
 
 type UpgradeTestSuite struct {

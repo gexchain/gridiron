@@ -4,7 +4,7 @@ package gridiron.revenue.v1;
 import "gridiron/revenue/v1/revenue.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/gridiron/gridiron/v11/x/revenue/types";
+option go_package = "github.com/gridchain/gridiron/v11/x/revenue/types";
 
 // GenesisState defines the module's genesis state.
 message GenesisState {

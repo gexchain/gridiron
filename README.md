@@ -8,17 +8,17 @@ parent:
 </div>
 
 <div align="center">
-  <a href="https://github.com/gridiron/gridiron/releases/latest">
+  <a href="https://github.com/gridchain/gridiron/releases/latest">
     <img alt="Version" src="https://img.shields.io/github/tag/tharsis/gridiron.svg" />
   </a>
-  <a href="https://github.com/gridiron/gridiron/blob/main/LICENSE">
+  <a href="https://github.com/gridchain/gridiron/blob/main/LICENSE">
     <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/tharsis/gridiron.svg" />
   </a>
-  <a href="https://pkg.go.dev/github.com/gridiron/gridiron">
-    <img alt="GoDoc" src="https://godoc.org/github.com/gridiron/gridiron?status.svg" />
+  <a href="https://pkg.go.dev/github.com/gridchain/gridiron">
+    <img alt="GoDoc" src="https://godoc.org/github.com/gridchain/gridiron?status.svg" />
   </a>
-  <a href="https://goreportcard.com/report/github.com/gridiron/gridiron">
-    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/gridiron/gridiron"/>
+  <a href="https://goreportcard.com/report/github.com/gridchain/gridiron">
+    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/gridchain/gridiron"/>
   </a>
   <a href="https://bestpractices.coreinfrastructure.org/projects/5018">
     <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/tharsis/gridiron">
@@ -28,8 +28,8 @@ parent:
   <a href="https://discord.gg/gridiron">
     <img alt="Discord" src="https://img.shields.io/discord/809048090249134080.svg" />
   </a>
-  <a href="https://github.com/gridiron/gridiron/actions?query=branch%3Amain+workflow%3ALint">
-    <img alt="Lint Status" src="https://github.com/gridiron/gridiron/actions/workflows/lint.yml/badge.svg?branch=main" />
+  <a href="https://github.com/gridchain/gridiron/actions?query=branch%3Amain+workflow%3ALint">
+    <img alt="Lint Status" src="https://github.com/gridchain/gridiron/actions/workflows/lint.yml/badge.svg?branch=main" />
   </a>
   <a href="https://codecov.io/gh/tharsis/gridiron">
     <img alt="Code Coverage" src="https://codecov.io/gh/tharsis/gridiron/branch/main/graph/badge.svg" />
@@ -52,7 +52,7 @@ For prerequisites and detailed build instructions please read the [Installation]
 make install
 ```
 
-Or check out the latest [release](https://github.com/gridiron/gridiron/releases).
+Or check out the latest [release](https://github.com/gridchain/gridiron/releases).
 
 ## Quick Start
 
@@ -69,7 +69,7 @@ The following chat channels and forums are a great spot to ask questions about G
 
 ## Contributing
 
-Looking for a good place to start contributing? Check out some [`good first issues`](https://github.com/gridiron/gridiron/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+Looking for a good place to start contributing? Check out some [`good first issues`](https://github.com/gridchain/gridiron/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 For additional instructions, standards and style guides, please refer to the [Contributing](./CONTRIBUTING.md) document.
 

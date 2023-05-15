@@ -228,11 +228,11 @@ module.exports = {
             },
             {
               title: "Gridiron Go API",
-              path: "https://pkg.go.dev/github.com/gridiron/gridiron",
+              path: "https://pkg.go.dev/github.com/gridchain/gridiron",
             },
             {
               title: "Ethermint Library Go API",
-              path: "https://pkg.go.dev/github.com/gridiron/ethermint",
+              path: "https://pkg.go.dev/github.com/gridchain/ethermint",
             },
             {
               title: "Gridiron Protobuf",
@@ -344,7 +344,7 @@ module.exports = {
       services: [
         {
           service: "github",
-          url: "https://github.com/gridiron/gridiron",
+          url: "https://github.com/gridchain/gridiron",
         },
         {
           service: "twitter",

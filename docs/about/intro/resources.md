@@ -15,10 +15,10 @@ This documentation page is currently under work in progress.
 :::
 
 - Documentation (this site): [https://docs.gridiron.org/](https://docs.gridiron.org/)
-- Open Source Codebase: [https://github.com/gridiron/gridiron](https://github.com/gridiron/gridiron)
+- Open Source Codebase: [https://github.com/gridchain/gridiron](https://github.com/gridchain/gridiron)
 - Website: [https://gridiron.org/](https://gridiron.org/)
 - Blog: [https://gridiron.blog/](https://gridiron.blog/)
-- Ethermint: [https://github.com/gridiron/ethermint](https://github.com/gridiron/ethermint)
+- Ethermint: [https://github.com/gridchain/ethermint](https://github.com/gridchain/ethermint)
 
 ## Workshops and Videos
 

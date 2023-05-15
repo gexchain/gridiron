@@ -3,7 +3,7 @@ package types
 import (
 	"testing"
 
-	epochstypes "github.com/gridiron/gridiron/v11/x/epochs/types"
+	epochstypes "github.com/gridchain/gridiron/v11/x/epochs/types"
 	"github.com/stretchr/testify/suite"
 )
 

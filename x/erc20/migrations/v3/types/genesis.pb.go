@@ -6,7 +6,7 @@ package v3types
 import (
 	fmt "fmt"
 	_ "github.com/cosmos/gogoproto/gogoproto"
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"
 	math "math"

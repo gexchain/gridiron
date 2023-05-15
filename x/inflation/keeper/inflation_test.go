@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	ethermint "github.com/gridiron/ethermint/types"
-	incentivestypes "github.com/gridiron/gridiron/v11/x/incentives/types"
-	"github.com/gridiron/gridiron/v11/x/inflation/types"
+	ethermint "github.com/gridchain/ethermint/types"
+	incentivestypes "github.com/gridchain/gridiron/v11/x/incentives/types"
+	"github.com/gridchain/gridiron/v11/x/inflation/types"
 )
 
 func (suite *KeeperTestSuite) TestMintAndAllocateInflation() {

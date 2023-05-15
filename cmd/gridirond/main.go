@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package main
 
@@ -23,8 +23,8 @@ import (
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/gridiron/gridiron/v11/app"
-	cmdcfg "github.com/gridiron/gridiron/v11/cmd/config"
+	"github.com/gridchain/gridiron/v11/app"
+	cmdcfg "github.com/gridchain/gridiron/v11/cmd/config"
 )
 
 func main() {

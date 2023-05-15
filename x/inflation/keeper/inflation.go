@@ -12,18 +12,18 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	ethermint "github.com/gridiron/ethermint/types"
+	ethermint "github.com/gridchain/ethermint/types"
 
-	gridiron "github.com/gridiron/gridiron/v11/types"
-	incentivestypes "github.com/gridiron/gridiron/v11/x/incentives/types"
-	"github.com/gridiron/gridiron/v11/x/inflation/types"
+	gridiron "github.com/gridchain/gridiron/v11/types"
+	incentivestypes "github.com/gridchain/gridiron/v11/x/incentives/types"
+	"github.com/gridchain/gridiron/v11/x/inflation/types"
 )
 
 // 200M token at year 4 allocated to the team

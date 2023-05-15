@@ -21,7 +21,7 @@ Application-wise, the ERC-20 module allows DeFi protocols to seamlessly integrat
 
 Registering an interoperable ERC-20 means registering a new mapping between an existing ERC-20 token contract and a Cosmos Coin denomination, also known as a Token Pair. Token Pairs enable users to convert ERC-20 tokens into their native Cosmos Coin representation (and vice versa), and can only be created via a governance proposal.
 
-More information can be found in [this blog post](https://medium.com/gridiron/introducing-gridiron-erc20-module-f40a61e05273), which introduced the ERC-20 Module on Gridiron.
+More information can be found in [this blog post](https://medium.com/gridchain/introducing-gridiron-erc20-module-f40a61e05273), which introduced the ERC-20 Module on Gridiron.
 
 To register an ERC-20, consider the following stages:
 
@@ -35,7 +35,7 @@ The following topics must be addressed when drafting an ERC-20 Proposal:
 
 2. Promote understanding of the ERC-20 Module.
 
-   Make sure to mention the original [blog post](https://medium.com/gridiron/introducing-gridiron-erc20-module-f40a61e05273) that introduced the ERC-20 Module, along with a brief explanation of what the ERC-20 Module does. It's also a good idea to link the [ERC-20 Module documentation](https://docs.gridiron.org/modules/erc20/)!
+   Make sure to mention the original [blog post](https://medium.com/gridchain/introducing-gridiron-erc20-module-f40a61e05273) that introduced the ERC-20 Module, along with a brief explanation of what the ERC-20 Module does. It's also a good idea to link the [ERC-20 Module documentation](https://docs.gridiron.org/modules/erc20/)!
 
 3. Describe how ERC-20 Module changes will be made.
 
@@ -92,7 +92,7 @@ Submitting your proposal to the testnet increases the likelihood of engagement a
 
 ## Register Token and Network to Chain-Token-Registry repo
 
-Before proceeding to an On-Chain proposal, it is crucial to list the token pair and network to our chain and token registry, found [here](https://github.com/gridiron/chain-token-registry). The information in the repo will help power the Gridiron Dashboard [Assets Page](https://app.gridiron.org/assets) and allow users to deposit, withdraw, and convert token pairs between IBC and ERC-20 state. We currently use the [Cosmos Chain Registry](https://github.com/cosmos/chain-registry) repo to pull in the list of RPC, gRPC, and REST endpoints to use for our Dashboard. It is important to ensure the most updated information is present. If there are a set of endpoints or preferred providers, please do suggest it in the pull request. Please consult our chain registry schema for more details. Once the governance proposal passes, the pull request should be merged in around one business day.
+Before proceeding to an On-Chain proposal, it is crucial to list the token pair and network to our chain and token registry, found [here](https://github.com/gridchain/chain-token-registry). The information in the repo will help power the Gridiron Dashboard [Assets Page](https://app.gridiron.org/assets) and allow users to deposit, withdraw, and convert token pairs between IBC and ERC-20 state. We currently use the [Cosmos Chain Registry](https://github.com/cosmos/chain-registry) repo to pull in the list of RPC, gRPC, and REST endpoints to use for our Dashboard. It is important to ensure the most updated information is present. If there are a set of endpoints or preferred providers, please do suggest it in the pull request. Please consult our chain registry schema for more details. Once the governance proposal passes, the pull request should be merged in around one business day.
 
 ## The On-Chain ERC-20 Proposal
 

@@ -7,11 +7,11 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/testutil"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/gridiron/ethermint/encoding"
-	"github.com/gridiron/gridiron/v11/app"
-	v2 "github.com/gridiron/gridiron/v11/x/recovery/migrations/v2"
-	v2types "github.com/gridiron/gridiron/v11/x/recovery/migrations/v2/types"
-	"github.com/gridiron/gridiron/v11/x/recovery/types"
+	"github.com/gridchain/ethermint/encoding"
+	"github.com/gridchain/gridiron/v11/app"
+	v2 "github.com/gridchain/gridiron/v11/x/recovery/migrations/v2"
+	v2types "github.com/gridchain/gridiron/v11/x/recovery/migrations/v2/types"
+	"github.com/gridchain/gridiron/v11/x/recovery/types"
 	"github.com/stretchr/testify/require"
 )
 

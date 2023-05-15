@@ -3,7 +3,7 @@ package ibc
 import (
 	"testing"
 
-	"github.com/gridiron/gridiron/v11/x/claims/types"
+	"github.com/gridchain/gridiron/v11/x/claims/types"
 	"github.com/stretchr/testify/require"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -11,7 +11,7 @@ import (
 	transfertypes "github.com/cosmos/ibc-go/v6/modules/apps/transfer/types"
 	channeltypes "github.com/cosmos/ibc-go/v6/modules/core/04-channel/types"
 	ibctesting "github.com/cosmos/ibc-go/v6/testing"
-	teststypes "github.com/gridiron/gridiron/v11/types/tests"
+	teststypes "github.com/gridchain/gridiron/v11/types/tests"
 )
 
 func init() {
@@ -255,9 +255,9 @@ func TestGetReceivedCoin(t *testing.T) {
 			"channel-0",
 			"transfer",
 			"channel-0",
-			"transfer/channel-0/agridiron",
+			"transfer/channel-0/afury",
 			"10",
-			sdk.Coin{Denom: "agridiron", Amount: sdk.NewInt(10)},
+			sdk.Coin{Denom: "afury", Amount: sdk.NewInt(10)},
 		},
 		{
 			"transfer 2x ibc wrapped coin to destination which is its source",
@@ -295,14 +295,14 @@ func TestGetSentCoin(t *testing.T) {
 		expCoin   sdk.Coin
 	}{
 		{
-			"get unwrapped agridiron coin",
-			"agridiron",
+			"get unwrapped afury coin",
+			"afury",
 			"10",
-			sdk.Coin{Denom: "agridiron", Amount: sdk.NewInt(10)},
+			sdk.Coin{Denom: "afury", Amount: sdk.NewInt(10)},
 		},
 		{
-			"get ibc wrapped agridiron coin",
-			"transfer/channel-0/agridiron",
+			"get ibc wrapped afury coin",
+			"transfer/channel-0/afury",
 			"10",
 			sdk.Coin{Denom: teststypes.AgridironIbcdenom, Amount: sdk.NewInt(10)},
 		},

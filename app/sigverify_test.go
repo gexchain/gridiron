@@ -18,8 +18,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	"github.com/gridiron/ethermint/encoding"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	"github.com/gridchain/ethermint/encoding"
 )
 
 func generatePubKeysAndSignatures(n int, msg []byte, _ bool) (pubkeys []cryptotypes.PubKey, signatures [][]byte) {

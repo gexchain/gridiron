@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package keyring
 
@@ -21,9 +21,9 @@ import (
 	cosmosLedger "github.com/cosmos/cosmos-sdk/crypto/ledger"
 	"github.com/cosmos/cosmos-sdk/crypto/types"
 
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	"github.com/gridiron/ethermint/crypto/hd"
-	"github.com/gridiron/gridiron-ledger-go/ledger"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	"github.com/gridchain/ethermint/crypto/hd"
+	"github.com/gridchain/gridiron-ledger-go/ledger"
 )
 
 // AppName defines the Ledger app used for signing. Gridiron uses the Ethereum app

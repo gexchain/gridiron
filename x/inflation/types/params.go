@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package types
 
@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	evm "github.com/gridiron/ethermint/x/evm/types"
+	evm "github.com/gridchain/ethermint/x/evm/types"
 )
 
 var ParamsKey = []byte("Params")

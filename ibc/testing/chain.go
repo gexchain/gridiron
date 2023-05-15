@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package ibctesting
 
@@ -34,10 +34,10 @@ import (
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 	"github.com/cosmos/ibc-go/v6/testing/mock"
 
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	ethermint "github.com/gridiron/ethermint/types"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
-	gridiron "github.com/gridiron/gridiron/v11/types"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	ethermint "github.com/gridchain/ethermint/types"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
+	gridiron "github.com/gridchain/gridiron/v11/types"
 )
 
 // ChainIDPrefix defines the default chain ID prefix for Gridiron test chains

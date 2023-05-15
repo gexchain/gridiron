@@ -12,13 +12,13 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	"github.com/gridiron/ethermint/tests"
-	ethermint "github.com/gridiron/ethermint/types"
-	"github.com/gridiron/gridiron/v11/testutil"
-	inflationtypes "github.com/gridiron/gridiron/v11/x/inflation/types"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	"github.com/gridchain/ethermint/tests"
+	ethermint "github.com/gridchain/ethermint/types"
+	"github.com/gridchain/gridiron/v11/testutil"
+	inflationtypes "github.com/gridchain/gridiron/v11/x/inflation/types"
 
-	"github.com/gridiron/gridiron/v11/x/claims/types"
+	"github.com/gridchain/gridiron/v11/x/claims/types"
 )
 
 func (suite *KeeperTestSuite) TestGetClaimableAmountForAction() {

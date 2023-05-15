@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package recovery
 
@@ -35,9 +35,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/gridiron/gridiron/v11/x/recovery/client/cli"
-	"github.com/gridiron/gridiron/v11/x/recovery/keeper"
-	"github.com/gridiron/gridiron/v11/x/recovery/types"
+	"github.com/gridchain/gridiron/v11/x/recovery/client/cli"
+	"github.com/gridchain/gridiron/v11/x/recovery/keeper"
+	"github.com/gridchain/gridiron/v11/x/recovery/types"
 )
 
 // type check to ensure the interface is properly implemented

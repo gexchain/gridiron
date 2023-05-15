@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package epochs
 
@@ -36,9 +36,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/gridiron/gridiron/v11/x/epochs/client/cli"
-	"github.com/gridiron/gridiron/v11/x/epochs/keeper"
-	"github.com/gridiron/gridiron/v11/x/epochs/types"
+	"github.com/gridchain/gridiron/v11/x/epochs/client/cli"
+	"github.com/gridchain/gridiron/v11/x/epochs/keeper"
+	"github.com/gridchain/gridiron/v11/x/epochs/types"
 )
 
 var (

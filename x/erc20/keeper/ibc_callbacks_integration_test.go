@@ -12,11 +12,11 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v6/modules/core/04-channel/types"
 	"github.com/cosmos/ibc-go/v6/testing/simapp"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/gridiron/gridiron/v11/contracts"
-	"github.com/gridiron/gridiron/v11/testutil"
-	teststypes "github.com/gridiron/gridiron/v11/types/tests"
-	claimstypes "github.com/gridiron/gridiron/v11/x/claims/types"
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	"github.com/gridchain/gridiron/v11/contracts"
+	"github.com/gridchain/gridiron/v11/testutil"
+	teststypes "github.com/gridchain/gridiron/v11/types/tests"
+	claimstypes "github.com/gridchain/gridiron/v11/x/claims/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 	. "github.com/onsi/ginkgo/v2"
 )
 
@@ -145,34 +145,34 @@ var _ = Describe("Convert receiving IBC to Erc20", Ordered, func() {
 			ibcAtomBalanceAfter := s.app.BankKeeper.GetBalance(s.GridironChain.GetContext(), receiverAcc, teststypes.UatomIbcdenom)
 			s.Require().Equal(amount, ibcAtomBalanceAfter.Amount.Int64())
 		})
-		It("should transfer and not convert agridiron", func() {
-			// Register 'agridiron' coin in ERC-20 keeper to validate it is not converting the coins when receiving 'agridiron' thru IBC
+		It("should transfer and not convert afury", func() {
+			// Register 'afury' coin in ERC-20 keeper to validate it is not converting the coins when receiving 'afury' thru IBC
 			pair, err := s.app.Erc20Keeper.RegisterCoin(s.GridironChain.GetContext(), gridironMeta)
 			s.Require().NoError(err)
 
-			agridironInitialBalance := s.app.BankKeeper.GetBalance(s.GridironChain.GetContext(), receiverAcc, claimstypes.DefaultClaimsDenom)
+			afuryInitialBalance := s.app.BankKeeper.GetBalance(s.GridironChain.GetContext(), receiverAcc, claimstypes.DefaultClaimsDenom)
 
-			// 1. Send agridiron from Gridiron to Osmosis
+			// 1. Send afury from Gridiron to Osmosis
 			s.SendAndReceiveMessage(s.pathOsmosisGridiron, s.GridironChain, claimstypes.DefaultClaimsDenom, amount, receiver, sender, 1, "")
 
-			agridironAfterBalance := s.app.BankKeeper.GetBalance(s.GridironChain.GetContext(), receiverAcc, claimstypes.DefaultClaimsDenom)
-			s.Require().Equal(agridironInitialBalance.Amount.Int64()-amount, agridironAfterBalance.Amount.Int64())
+			afuryAfterBalance := s.app.BankKeeper.GetBalance(s.GridironChain.GetContext(), receiverAcc, claimstypes.DefaultClaimsDenom)
+			s.Require().Equal(afuryInitialBalance.Amount.Int64()-amount, afuryAfterBalance.Amount.Int64())
 
-			// check ibc agridiron coins balance on Osmosis
-			agridironIBCBalanceBefore := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), senderAcc, teststypes.AgridironIbcdenom)
-			s.Require().Equal(amount, agridironIBCBalanceBefore.Amount.Int64())
+			// check ibc afury coins balance on Osmosis
+			afuryIBCBalanceBefore := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), senderAcc, teststypes.AgridironIbcdenom)
+			s.Require().Equal(amount, afuryIBCBalanceBefore.Amount.Int64())
 
-			// 2. Send agridiron IBC coins from Osmosis to Gridiron
+			// 2. Send afury IBC coins from Osmosis to Gridiron
 			ibcCoinMeta := fmt.Sprintf("%s/%s", teststypes.AgridironDenomtrace.Path, teststypes.AgridironDenomtrace.BaseDenom)
 			s.SendBackCoins(s.pathOsmosisGridiron, s.IBCOsmosisChain, teststypes.AgridironIbcdenom, amount, sender, receiver, 1, ibcCoinMeta)
 
-			// check ibc agridiron coins balance on Osmosis - should be zero
-			agridironIBCSenderFinalBalance := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), senderAcc, teststypes.AgridironIbcdenom)
-			s.Require().Equal(int64(0), agridironIBCSenderFinalBalance.Amount.Int64())
+			// check ibc afury coins balance on Osmosis - should be zero
+			afuryIBCSenderFinalBalance := s.IBCOsmosisChain.GetSimApp().BankKeeper.GetBalance(s.IBCOsmosisChain.GetContext(), senderAcc, teststypes.AgridironIbcdenom)
+			s.Require().Equal(int64(0), afuryIBCSenderFinalBalance.Amount.Int64())
 
-			// check agridiron balance after transfer - should be equal to initial balance
-			agridironFinalBalance := s.app.BankKeeper.GetBalance(s.GridironChain.GetContext(), receiverAcc, claimstypes.DefaultClaimsDenom)
-			s.Require().Equal(agridironInitialBalance.Amount.Int64(), agridironFinalBalance.Amount.Int64())
+			// check afury balance after transfer - should be equal to initial balance
+			afuryFinalBalance := s.app.BankKeeper.GetBalance(s.GridironChain.GetContext(), receiverAcc, claimstypes.DefaultClaimsDenom)
+			s.Require().Equal(afuryInitialBalance.Amount.Int64(), afuryFinalBalance.Amount.Int64())
 
 			// check IBC Coin balance - should be zero
 			ibcCoinsBalance := s.app.BankKeeper.GetBalance(s.GridironChain.GetContext(), receiverAcc, teststypes.AgridironIbcdenom)
@@ -301,7 +301,7 @@ var _ = Describe("Convert receiving IBC to Erc20", Ordered, func() {
 			amount, _ := strconv.ParseInt(claimstypes.IBCTriggerAmt, 10, 64)
 			s.SendAndReceiveMessage(s.pathOsmosisGridiron, s.IBCOsmosisChain, "uosmo", amount, sender, receiver, 1, "")
 
-			// should trigger claims logic and send agridiron coins from claims to receiver
+			// should trigger claims logic and send afury coins from claims to receiver
 
 			// ERC-20 balance should be the transfered amount
 			balanceTokenAfter := s.app.Erc20Keeper.BalanceOf(s.GridironChain.GetContext(), contracts.ERC20MinterBurnerDecimalsContract.ABI, pair.GetERC20Contract(), common.BytesToAddress(receiverAcc.Bytes()))

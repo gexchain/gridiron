@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gridiron/gridiron/v11/x/epochs"
-	"github.com/gridiron/gridiron/v11/x/epochs/types"
+	"github.com/gridchain/gridiron/v11/x/epochs"
+	"github.com/gridchain/gridiron/v11/x/epochs/types"
 )
 
 func (suite *KeeperTestSuite) TestEpochInfoChangesBeginBlockerAndInitGenesis() {

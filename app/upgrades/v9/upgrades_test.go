@@ -14,13 +14,13 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	feemarkettypes "github.com/gridiron/ethermint/x/feemarket/types"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	feemarkettypes "github.com/gridchain/ethermint/x/feemarket/types"
 
-	"github.com/gridiron/gridiron/v11/app"
-	v9 "github.com/gridiron/gridiron/v11/app/upgrades/v9"
-	gridirontypes "github.com/gridiron/gridiron/v11/types"
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	"github.com/gridchain/gridiron/v11/app"
+	v9 "github.com/gridchain/gridiron/v11/app/upgrades/v9"
+	gridirontypes "github.com/gridchain/gridiron/v11/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 )
 
 type UpgradeTestSuite struct {
@@ -84,14 +84,14 @@ func (suite *UpgradeTestSuite) TestReturnFundsFromCommunityPool() {
 	address := common.BytesToAddress(priv.PubKey().Address().Bytes())
 	sender := sdk.AccAddress(address.Bytes())
 	res, _ := sdk.NewIntFromString(v9.MaxRecover)
-	coins := sdk.NewCoins(sdk.NewCoin("agridiron", res))
+	coins := sdk.NewCoins(sdk.NewCoin("afury", res))
 	suite.app.BankKeeper.MintCoins(suite.ctx, types.ModuleName, coins)
 	suite.app.BankKeeper.SendCoinsFromModuleToAccount(suite.ctx, types.ModuleName, sender, coins)
 	err = suite.app.DistrKeeper.FundCommunityPool(suite.ctx, coins, sender)
 	suite.Require().NoError(err)
 
 	balanceBefore := suite.app.DistrKeeper.GetFeePoolCommunityCoins(suite.ctx)
-	suite.Require().Equal(balanceBefore.AmountOf("agridiron"), sdk.NewDecFromInt(res))
+	suite.Require().Equal(balanceBefore.AmountOf("afury"), sdk.NewDecFromInt(res))
 
 	// return funds to accounts affected
 	err = v9.ReturnFundsFromCommunityPool(suite.ctx, suite.app.DistrKeeper)
@@ -101,7 +101,7 @@ func (suite *UpgradeTestSuite) TestReturnFundsFromCommunityPool() {
 	for i := range v9.Accounts {
 		addr := sdk.MustAccAddressFromBech32(v9.Accounts[i][0])
 		res, _ := sdk.NewIntFromString(v9.Accounts[i][1])
-		balance := suite.app.BankKeeper.GetBalance(suite.ctx, addr, "agridiron")
+		balance := suite.app.BankKeeper.GetBalance(suite.ctx, addr, "afury")
 		suite.Require().Equal(balance.Amount, res)
 	}
 

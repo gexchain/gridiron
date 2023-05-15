@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package app
 
@@ -22,8 +22,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	v82 "github.com/gridiron/gridiron/v11/app/upgrades/v8_2"
-	"github.com/gridiron/gridiron/v11/types"
+	v82 "github.com/gridchain/gridiron/v11/app/upgrades/v8_2"
+	"github.com/gridchain/gridiron/v11/types"
 )
 
 // ScheduleForkUpgrade executes any necessary fork logic for based upon the current

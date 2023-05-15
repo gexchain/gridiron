@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package types
 
@@ -28,7 +28,7 @@ import (
 	transfertypes "github.com/cosmos/ibc-go/v6/modules/apps/transfer/types"
 	channeltypes "github.com/cosmos/ibc-go/v6/modules/core/04-channel/types"
 
-	claimstypes "github.com/gridiron/gridiron/v11/x/claims/types"
+	claimstypes "github.com/gridchain/gridiron/v11/x/claims/types"
 )
 
 // BankKeeper defines the banking keeper that must be fulfilled when

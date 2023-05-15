@@ -1,6 +1,6 @@
 package keeper_test
 
-import "github.com/gridiron/gridiron/v11/x/incentives/types"
+import "github.com/gridchain/gridiron/v11/x/incentives/types"
 
 func (suite *KeeperTestSuite) TestParams() {
 	params := suite.app.IncentivesKeeper.GetParams(suite.ctx)

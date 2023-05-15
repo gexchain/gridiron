@@ -192,7 +192,7 @@ Use the `gridiron tx gov --help` flag to get more info about the governance comm
    - the transaction will only use the amount of gas needed to process the transaction
 5. `--gas-prices` is the flat-rate per unit of gas value for a validator to process your transaction
 6. `--chain-id gridiron_9001-2` is Gridiron Mainnet. For current and past chain-id's, please look at the [Chain ID](./../technical_concepts/chain_id.md) documentation.
-   - the testnet chain ID is [gridiron_9000-4](https://testnet.mintscan.io/gridiron). For current and past testnet information, please look at the [testnet repository](https://github.com/gridiron/testnets)
+   - the testnet chain ID is [gridiron_9000-4](https://testnet.mintscan.io/gridiron). For current and past testnet information, please look at the [testnet repository](https://github.com/gridchain/testnets)
 7. `--node` is using a full node to send the transaction to the Gridiron Mainnet
 
 ### Verifying your transaction

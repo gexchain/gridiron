@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 // This accounts represent the affected accounts during the Claims record clawback incident on block 5074187
 // with the respective balance on block 5074186.
@@ -24,7 +24,7 @@
 // - They had a balance of 0 after block 5074187
 // NOTE community and claims module account were removed from this list since they were not affected by this bug.
 
-// The scripts that were used to find affected accounts were made public at https://github.com/gridiron/claims_fixer
+// The scripts that were used to find affected accounts were made public at https://github.com/gridchain/claims_fixer
 // with detail instructions on how to run them.
 
 package v9

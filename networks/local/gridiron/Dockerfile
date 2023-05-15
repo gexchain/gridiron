@@ -6,7 +6,7 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y $PACKAGES
 
 # Set working directory for the build
-WORKDIR /go/src/github.com/gridiron/gridiron
+WORKDIR /go/src/github.com/gridchain/gridiron
 
 # Add source files
 COPY . .
@@ -22,8 +22,8 @@ WORKDIR /
 RUN apt-get update
 
 # Copy over binaries from the build-env
-COPY --from=build-env /go/src/github.com/gridiron/gridiron/build/gridirond /
-COPY --from=build-env /go/src/github.com/gridiron/gridiron/scripts/start-docker.sh /
+COPY --from=build-env /go/src/github.com/gridchain/gridiron/build/gridirond /
+COPY --from=build-env /go/src/github.com/gridchain/gridiron/scripts/start-docker.sh /
 
 EXPOSE 26656 26657 1317 9090 8545 8546
 

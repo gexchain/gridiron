@@ -19,9 +19,9 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/gridiron/ethermint/encoding"
-	"github.com/gridiron/gridiron/v11/types"
-	claimstypes "github.com/gridiron/gridiron/v11/x/claims/types"
+	"github.com/gridchain/ethermint/encoding"
+	"github.com/gridchain/gridiron/v11/types"
+	claimstypes "github.com/gridchain/gridiron/v11/x/claims/types"
 )
 
 func TestGridironExport(t *testing.T) {

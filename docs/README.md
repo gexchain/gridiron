@@ -47,9 +47,9 @@ aside: false
 ## Other Resources
 
 - **[Module Directory](../x/)**: Module implementations and their respective documentation.
-- **[Ethermint API Reference](https://pkg.go.dev/github.com/gridiron/ethermint)**: Godocs of Ethermint.
+- **[Ethermint API Reference](https://pkg.go.dev/github.com/gridchain/ethermint)**: Godocs of Ethermint.
 - **[gRPC Gateway API Reference](https://api.gridiron.dev/)**: List of gRPC Gateway endpoints to interact with an full-node through REST.
 
 ## Contribute
 
-See [this file](https://github.com/gridiron/gridiron/blob/main/docs/DOCS_README.md) for details of the build process and considerations when making changes.
+See [this file](https://github.com/gridchain/gridiron/blob/main/docs/DOCS_README.md) for details of the build process and considerations when making changes.

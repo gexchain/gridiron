@@ -9,7 +9,7 @@ BINDIR ?= $(GOPATH)/bin
 GRIDIRON_BINARY = gridirond
 GRIDIRON_DIR = gridiron
 BUILDDIR ?= $(CURDIR)/build
-HTTPS_GIT := https://github.com/gridiron/gridiron.git
+HTTPS_GIT := https://github.com/gridchain/gridiron.git
 DOCKER := $(shell which docker)
 NAMESPACE := tharsishq
 PROJECT := gridiron
@@ -293,7 +293,7 @@ update-swagger-docs: statik
 .PHONY: update-swagger-docs
 
 godocs:
-	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/gridiron/gridiron/types"
+	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/gridchain/gridiron/types"
 	godoc -http=:6060
 
 # Start docs site at localhost:8080
@@ -471,7 +471,7 @@ proto-check-breaking:
 TM_URL              = https://raw.githubusercontent.com/tendermint/tendermint/v0.34.20/proto/tendermint
 GOGO_PROTO_URL      = https://raw.githubusercontent.com/regen-network/protobuf/cosmos
 COSMOS_SDK_URL      = https://raw.githubusercontent.com/cosmos/cosmos-sdk/v0.46.0
-ETHERMINT_URL       = https://raw.githubusercontent.com/gridiron/ethermint/v0.6.1
+ETHERMINT_URL       = https://raw.githubusercontent.com/gridchain/ethermint/v0.6.1
 IBC_GO_URL          = https://raw.githubusercontent.com/cosmos/ibc-go/v5.0.0-beta1
 COSMOS_PROTO_URL    = https://raw.githubusercontent.com/regen-network/cosmos-proto/master
 
@@ -553,7 +553,7 @@ localnet-show-logstream:
 ###                                Releasing                                ###
 ###############################################################################
 
-PACKAGE_NAME:=github.com/gridiron/gridiron
+PACKAGE_NAME:=github.com/gridchain/gridiron
 GOLANG_CROSS_VERSION  = v1.19
 GOPATH ?= '$(HOME)/go'
 release-dry-run:

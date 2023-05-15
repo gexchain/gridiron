@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package testutil
 
@@ -30,10 +30,10 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	"github.com/gridiron/ethermint/encoding"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	"github.com/gridchain/ethermint/encoding"
 
-	"github.com/gridiron/gridiron/v11/app"
+	"github.com/gridchain/gridiron/v11/app"
 )
 
 // SubmitProposal delivers a submit proposal tx for a given gov content.

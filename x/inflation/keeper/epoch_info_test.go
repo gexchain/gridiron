@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"fmt"
 
-	epochstypes "github.com/gridiron/gridiron/v11/x/epochs/types"
-	"github.com/gridiron/gridiron/v11/x/inflation/types"
+	epochstypes "github.com/gridchain/gridiron/v11/x/epochs/types"
+	"github.com/gridchain/gridiron/v11/x/inflation/types"
 )
 
 func (suite *KeeperTestSuite) TestSetGetEpochIdentifier() {

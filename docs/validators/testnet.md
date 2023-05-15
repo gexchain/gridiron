@@ -8,14 +8,14 @@ This document outlines the steps to join an existing testnet {synopsis}
 
 ## Pick a Testnet
 
-You specify the network you want to join by setting the **genesis file** and **seeds**. If you need more information about past networks, check our [testnets repo](https://github.com/gridiron/testnets).
+You specify the network you want to join by setting the **genesis file** and **seeds**. If you need more information about past networks, check our [testnets repo](https://github.com/gridchain/testnets).
 
 | Testnet Chain ID | Description                       | Site                                                                       | Version                                                                                  | Status  |
 | ---------------- | --------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------- |
-| `gridiron_9000-4`   | Gridiron_9000-4 Testnet              | [Gridiron 9000-4](https://github.com/gridiron/testnets/tree/main/gridiron_9000-4) | [`{{ $themeConfig.project.testnet_version }}`](https://github.com/gridiron/gridiron/releases) | `Live`  |
-| `gridiron_9000-3`   | Gridiron_9000-3 Testnet              | [Gridiron 9000-3](https://github.com/gridiron/testnets/tree/main/gridiron_9000-3) | [`v1.0.0-beta1`](https://github.com/gridiron/gridiron/releases/tag/v1.0.0-beta1)             | `Stale` |
-| `gridiron_9000-2`   | Olympus Mons Incentivized Testnet | [Olympus Mons](https://github.com/gridiron/testnets/tree/main/olympus_mons) | [`v0.3.x`](https://github.com/gridiron/gridiron/releases)                                    | `Stale` |
-| `gridiron_9000-1`   | Arsia Mons Testnet                | [Arsia Mons](https://github.com/gridiron/testnets/tree/main/arsia_mons)     | [`v0.1.x`](https://github.com/gridiron/gridiron/releases)                                    | `Stale` |
+| `gridiron_9000-4`   | Gridiron_9000-4 Testnet              | [Gridiron 9000-4](https://github.com/gridchain/testnets/tree/main/gridiron_9000-4) | [`{{ $themeConfig.project.testnet_version }}`](https://github.com/gridchain/gridiron/releases) | `Live`  |
+| `gridiron_9000-3`   | Gridiron_9000-3 Testnet              | [Gridiron 9000-3](https://github.com/gridchain/testnets/tree/main/gridiron_9000-3) | [`v1.0.0-beta1`](https://github.com/gridchain/gridiron/releases/tag/v1.0.0-beta1)             | `Stale` |
+| `gridiron_9000-2`   | Olympus Mons Incentivized Testnet | [Olympus Mons](https://github.com/gridchain/testnets/tree/main/olympus_mons) | [`v0.3.x`](https://github.com/gridchain/gridiron/releases)                                    | `Stale` |
+| `gridiron_9000-1`   | Arsia Mons Testnet                | [Arsia Mons](https://github.com/gridchain/testnets/tree/main/arsia_mons)     | [`v0.1.x`](https://github.com/gridchain/gridiron/releases)                                    | `Stale` |
 
 ## Install `gridirond`
 
@@ -71,7 +71,7 @@ gridirond validate-genesis
 
 ### Add Seed Nodes
 
-Your node needs to know how to find [peers](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#peers). You'll need to add healthy [seed nodes](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#seed) to `$HOME/.gridirond/config/config.toml`. The [`testnets`](https://github.com/gridiron/testnets) repo contains links to some seed nodes.
+Your node needs to know how to find [peers](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#peers). You'll need to add healthy [seed nodes](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#seed) to `$HOME/.gridirond/config/config.toml`. The [`testnets`](https://github.com/gridchain/testnets) repo contains links to some seed nodes.
 
 Edit the file located in `~/.gridirond/config/config.toml` and the `seeds` to the following:
 
@@ -101,7 +101,7 @@ For more information on seeds and peers, you can the Tendermint [P2P documentati
 ### Add Persistent Peers
 
 We can set the [`persistent_peers`](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#persistent-peer) field in `~/.gridirond/config/config.toml` to specify peers that your node will maintain persistent connections with. You can retrieve them from the list of
-available peers on the [`testnets`](https://github.com/gridiron/testnets) repo.
+available peers on the [`testnets`](https://github.com/gridchain/testnets) repo.
 
 A list of available persistent peers is also available in the `#find-peers` channel in the [Gridiron Discord](https://discord.gg/gridiron). You can get a random 10 entries from the `peers.txt` file in the `PEERS` variable by running the following command:
 

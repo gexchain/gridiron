@@ -55,7 +55,7 @@ gridirond version
 <!-- NOTE: Using a h4 tag here so the relative markdown link used at the top of this document works -->
 <h4 id="manual-download">2.a) Manual Download</h4>
 
-Cosmovisor will continually poll the `$DAEMON_HOME/data/upgrade-info.json` for new upgrade instructions. When an upgrade is [released](https://github.com/gridiron/gridiron/releases), node operators need to:
+Cosmovisor will continually poll the `$DAEMON_HOME/data/upgrade-info.json` for new upgrade instructions. When an upgrade is [released](https://github.com/gridchain/gridiron/releases), node operators need to:
 
 1. Download (**NOT INSTALL**) the binary for the new release
 2. Place it under `$DAEMON_HOME/cosmovisor/upgrades/<name>/bin`, where `<name>` is the URI-encoded name of the upgrade as specified in the Software Upgrade Plan.
@@ -65,11 +65,11 @@ Cosmovisor will continually poll the `$DAEMON_HOME/data/upgrade-info.json` for n
 ```json
 {
     "binaries": {
-        "darwin/arm64": "https://github.com/gridiron/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Darwin_arm64.tar.gz",
-        "darwin/x86_64": "https://github.com/gridiron/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Darwin_x86_64.tar.gz",
-        "linux/arm64": "https://github.com/gridiron/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Linux_arm64.tar.gz",
-        "linux/amd64": "https://github.com/gridiron/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Linux_amd64.tar.gz",
-        "windows/x86_64": "https://github.com/gridiron/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Windows_x86_64.zip"
+        "darwin/arm64": "https://github.com/gridchain/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Darwin_arm64.tar.gz",
+        "darwin/x86_64": "https://github.com/gridchain/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Darwin_x86_64.tar.gz",
+        "linux/arm64": "https://github.com/gridchain/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Linux_arm64.tar.gz",
+        "linux/amd64": "https://github.com/gridchain/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Linux_amd64.tar.gz",
+        "windows/x86_64": "https://github.com/gridchain/gridiron/releases/download/v3.0.0/gridiron_3.0.0_Windows_x86_64.zip"
     }
 }
 ```

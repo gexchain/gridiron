@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package keeper
 
@@ -22,9 +22,9 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	vestexported "github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
-	ethermint "github.com/gridiron/ethermint/types"
+	ethermint "github.com/gridchain/ethermint/types"
 
-	"github.com/gridiron/gridiron/v11/x/claims/types"
+	"github.com/gridchain/gridiron/v11/x/claims/types"
 )
 
 // EndBlocker checks if the airdrop claiming period has ended in order to

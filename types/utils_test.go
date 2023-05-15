@@ -12,7 +12,7 @@ import (
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
 )
 
 func init() {
@@ -137,7 +137,7 @@ func TestGridironCoinDenom(t *testing.T) {
 	}{
 		{
 			"valid denom - native coin",
-			"agridiron",
+			"afury",
 			false,
 		},
 		{

@@ -12,11 +12,11 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v6/modules/core/04-channel/types"
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/gridiron/v11/app"
-	ibctesting "github.com/gridiron/gridiron/v11/ibc/testing"
-	"github.com/gridiron/gridiron/v11/testutil"
-	"github.com/gridiron/gridiron/v11/x/claims/types"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/gridiron/v11/app"
+	ibctesting "github.com/gridchain/gridiron/v11/ibc/testing"
+	"github.com/gridchain/gridiron/v11/testutil"
+	"github.com/gridchain/gridiron/v11/x/claims/types"
 )
 
 type IBCTestingSuite struct {
@@ -44,7 +44,7 @@ func (suite *IBCTestingSuite) SetupTest() {
 
 	claimsRecord := types.NewClaimsRecord(sdk.NewInt(10000))
 	addr := sdk.AccAddress(tests.GenerateAddress().Bytes())
-	coins := sdk.NewCoins(sdk.NewCoin("agridiron", sdk.NewInt(10000)))
+	coins := sdk.NewCoins(sdk.NewCoin("afury", sdk.NewInt(10000)))
 
 	err := testutil.FundModuleAccount(suite.chainB.GetContext(), suite.chainB.App.(*app.Gridiron).BankKeeper, types.ModuleName, coins)
 	suite.Require().NoError(err)
@@ -117,7 +117,7 @@ func (suite *IBCTestingSuite) TestOnAcknowledgementPacketIBC() {
 			"correct execution - Claimable Transfer",
 			func(claimableAmount int64) {
 				amt := sdk.NewInt(claimableAmount)
-				coins := sdk.NewCoins(sdk.NewCoin("agridiron", amt))
+				coins := sdk.NewCoins(sdk.NewCoin("afury", amt))
 
 				suite.chainA.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainA.GetContext(), senderAddr, types.NewClaimsRecord(amt))
 				// update the escrowed account balance to maintain the invariant
@@ -147,7 +147,7 @@ func (suite *IBCTestingSuite) TestOnAcknowledgementPacketIBC() {
 
 			tc.malleate(tc.claimableAmount)
 
-			transfer := transfertypes.NewFungibleTokenPacketData("agridiron", "100", sender, receiver, "")
+			transfer := transfertypes.NewFungibleTokenPacketData("afury", "100", sender, receiver, "")
 			bz := transfertypes.ModuleCdc.MustMarshalJSON(&transfer)
 			packet := channeltypes.NewPacket(bz, 1, path.EndpointA.ChannelConfig.PortID, path.EndpointA.ChannelID, path.EndpointB.ChannelConfig.PortID, path.EndpointB.ChannelID, timeoutHeight, 0)
 
@@ -163,8 +163,8 @@ func (suite *IBCTestingSuite) TestOnAcknowledgementPacketIBC() {
 			err = path.RelayPacket(packet)
 			suite.Require().NoError(err)
 
-			coin := suite.chainA.App.(*app.Gridiron).BankKeeper.GetBalance(suite.chainA.GetContext(), senderAddr, "agridiron")
-			suite.Require().Equal(sdk.NewCoin("agridiron", sdk.NewInt(tc.expectedBalance)).String(), coin.String())
+			coin := suite.chainA.App.(*app.Gridiron).BankKeeper.GetBalance(suite.chainA.GetContext(), senderAddr, "afury")
+			suite.Require().Equal(sdk.NewCoin("afury", sdk.NewInt(tc.expectedBalance)).String(), coin.String())
 			_, found := suite.chainA.App.(*app.Gridiron).ClaimsKeeper.GetClaimsRecord(suite.chainA.GetContext(), senderAddr)
 			if tc.expPass {
 				suite.Require().True(found)
@@ -210,7 +210,7 @@ func (suite *IBCTestingSuite) TestOnRecvPacketIBC() {
 			"no-op - only sender claims record found, already claimed transfer",
 			func(claimableAmount int64) {
 				amt := sdk.NewInt(claimableAmount)
-				coins := sdk.NewCoins(sdk.NewCoin("agridiron", sdk.NewInt(claimableAmount/4)))
+				coins := sdk.NewCoins(sdk.NewCoin("afury", sdk.NewInt(claimableAmount/4)))
 
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), senderAddr, types.ClaimsRecord{InitialClaimableAmount: amt, ActionsCompleted: []bool{false, true, true, true}})
 				// update the escrowed account balance to maintain the invariant
@@ -230,7 +230,7 @@ func (suite *IBCTestingSuite) TestOnRecvPacketIBC() {
 			"no-op - both sender & recipient record found, but sender already claimed transfer",
 			func(claimableAmount int64) {
 				amt := sdk.NewInt(claimableAmount)
-				coins := sdk.NewCoins(sdk.NewCoin("agridiron", amt))
+				coins := sdk.NewCoins(sdk.NewCoin("afury", amt))
 
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), senderAddr, types.ClaimsRecord{InitialClaimableAmount: amt, ActionsCompleted: []bool{false, false, false, true}})
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), receiverAddr, types.ClaimsRecord{InitialClaimableAmount: amt, ActionsCompleted: []bool{true, true, true, false}})
@@ -252,7 +252,7 @@ func (suite *IBCTestingSuite) TestOnRecvPacketIBC() {
 			"case 1: pass/merge - both sender & recipient record found",
 			func(claimableAmount int64) {
 				amt := sdk.NewInt(claimableAmount)
-				coins := sdk.NewCoins(sdk.NewCoin("agridiron", amt.Add(amt.QuoRaw(2))))
+				coins := sdk.NewCoins(sdk.NewCoin("afury", amt.Add(amt.QuoRaw(2))))
 
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), senderAddr, types.ClaimsRecord{InitialClaimableAmount: amt, ActionsCompleted: []bool{false, false, false, false}})
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), receiverAddr, types.ClaimsRecord{InitialClaimableAmount: amt, ActionsCompleted: []bool{false, true, true, false}})
@@ -275,7 +275,7 @@ func (suite *IBCTestingSuite) TestOnRecvPacketIBC() {
 			"case 1: pass/merge - both sender & recipient record found, but sender has no claimable amount",
 			func(claimableAmount int64) {
 				amt := sdk.NewInt(claimableAmount)
-				coins := sdk.NewCoins(sdk.NewCoin("agridiron", amt.QuoRaw(2)))
+				coins := sdk.NewCoins(sdk.NewCoin("afury", amt.QuoRaw(2)))
 
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), senderAddr, types.ClaimsRecord{InitialClaimableAmount: sdk.ZeroInt(), ActionsCompleted: []bool{false, false, false, false}})
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), receiverAddr, types.ClaimsRecord{InitialClaimableAmount: amt, ActionsCompleted: []bool{false, true, true, false}})
@@ -311,7 +311,7 @@ func (suite *IBCTestingSuite) TestOnRecvPacketIBC() {
 			"case 2: pass/migrate - only sender claims record found",
 			func(claimableAmount int64) {
 				amt := sdk.NewInt(claimableAmount)
-				coins := sdk.NewCoins(sdk.NewCoin("agridiron", amt))
+				coins := sdk.NewCoins(sdk.NewCoin("afury", amt))
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), senderAddr, types.NewClaimsRecord(amt))
 
 				// update the escrowed account balance to maintain the invariant
@@ -333,7 +333,7 @@ func (suite *IBCTestingSuite) TestOnRecvPacketIBC() {
 				amt := sdk.NewInt(claimableAmount)
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), receiverAddr, types.ClaimsRecord{InitialClaimableAmount: amt, ActionsCompleted: []bool{false, false, false, false}})
 
-				coins := sdk.NewCoins(sdk.NewCoin("agridiron", amt))
+				coins := sdk.NewCoins(sdk.NewCoin("afury", amt))
 				// update the escrowed account balance to maintain the invariant
 				err := testutil.FundModuleAccount(suite.chainB.GetContext(), suite.chainB.App.(*app.Gridiron).BankKeeper, types.ModuleName, coins)
 				suite.Require().NoError(err)
@@ -360,7 +360,7 @@ func (suite *IBCTestingSuite) TestOnRecvPacketIBC() {
 				amt := sdk.NewInt(claimableAmount)
 				suite.chainB.App.(*app.Gridiron).ClaimsKeeper.SetClaimsRecord(suite.chainB.GetContext(), receiverAddr, types.ClaimsRecord{InitialClaimableAmount: amt, ActionsCompleted: []bool{false, false, false, false}})
 
-				coins := sdk.NewCoins(sdk.NewCoin("agridiron", amt))
+				coins := sdk.NewCoins(sdk.NewCoin("afury", amt))
 				// update the escrowed account balance to maintain the invariant
 				err := testutil.FundModuleAccount(suite.chainB.GetContext(), suite.chainB.App.(*app.Gridiron).BankKeeper, types.ModuleName, coins)
 				suite.Require().NoError(err)
@@ -386,7 +386,7 @@ func (suite *IBCTestingSuite) TestOnRecvPacketIBC() {
 
 			tc.malleate(tc.claimableAmount)
 
-			transfer := transfertypes.NewFungibleTokenPacketData("agridiron", triggerAmt, sender, receiver, "")
+			transfer := transfertypes.NewFungibleTokenPacketData("afury", triggerAmt, sender, receiver, "")
 			bz := transfertypes.ModuleCdc.MustMarshalJSON(&transfer)
 			packet := channeltypes.NewPacket(bz, 1, path.EndpointA.ChannelConfig.PortID, path.EndpointA.ChannelID, path.EndpointB.ChannelConfig.PortID, path.EndpointB.ChannelID, timeoutHeight, 0)
 
@@ -401,8 +401,8 @@ func (suite *IBCTestingSuite) TestOnRecvPacketIBC() {
 			err := path.EndpointB.RecvPacket(packet)
 			suite.Require().NoError(err)
 
-			coin := suite.chainB.App.(*app.Gridiron).BankKeeper.GetBalance(suite.chainB.GetContext(), receiverAddr, "agridiron")
-			suite.Require().Equal(coin.String(), sdk.NewCoin("agridiron", sdk.NewInt(tc.expectedBalance)).String())
+			coin := suite.chainB.App.(*app.Gridiron).BankKeeper.GetBalance(suite.chainB.GetContext(), receiverAddr, "afury")
+			suite.Require().Equal(coin.String(), sdk.NewCoin("afury", sdk.NewInt(tc.expectedBalance)).String())
 			_, found := suite.chainB.App.(*app.Gridiron).ClaimsKeeper.GetClaimsRecord(suite.chainB.GetContext(), receiverAddr)
 			if tc.expectedRecipientFound {
 				suite.Require().True(found)

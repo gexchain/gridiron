@@ -33,7 +33,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 ## Install Binaries
 
 ::: tip
-The latest {{ $themeConfig.project.name }} [version](https://github.com/gridiron/gridiron/releases) is `{{ $themeConfig.project.binary }} {{ $themeConfig.project.latest_version }}`
+The latest {{ $themeConfig.project.name }} [version](https://github.com/gridchain/gridiron/releases) is `{{ $themeConfig.project.binary }} {{ $themeConfig.project.latest_version }}`
 :::
 
 ### GitHub
@@ -41,14 +41,14 @@ The latest {{ $themeConfig.project.name }} [version](https://github.com/gridiron
 Clone and build {{ $themeConfig.project.name }} using `git`:
 
 ```bash
-git clone https://github.com/gridiron/gridiron.git
+git clone https://github.com/gridchain/gridiron.git
 cd gridiron
 git fetch
 git checkout <tag>
 make install
 ```
 
-`<tag>` refers to a released tag from the tags [page](https://github.com/gridiron/gridiron/tags).
+`<tag>` refers to a released tag from the tags [page](https://github.com/gridchain/gridiron/tags).
 
 After installation is done, check that the `{{ $themeConfig.project.binary }}` binaries have been successfully installed:
 

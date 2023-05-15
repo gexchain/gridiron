@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/gridiron/ethermint/tests"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
+	"github.com/gridchain/ethermint/tests"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
 
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 )
 
 func (suite *KeeperTestSuite) TestGetTokenPairs() {

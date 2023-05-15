@@ -12,15 +12,15 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package inflation
 
 import (
 	errorsmod "cosmossdk.io/errors"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/gridiron/gridiron/v11/x/inflation/keeper"
-	"github.com/gridiron/gridiron/v11/x/inflation/types"
+	"github.com/gridchain/gridiron/v11/x/inflation/keeper"
+	"github.com/gridchain/gridiron/v11/x/inflation/types"
 )
 
 // InitGenesis import module genesis

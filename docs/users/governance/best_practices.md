@@ -120,7 +120,7 @@ Assume that many people will stop reading at this point. However, it is importan
      - how can the community provide feedback?
    - how should the quality of deliverables be assessed? eg. metrics
 5. Relationships and disclosures
-   - have you received or applied for grants or funding? for similar work? eg. from the [Gridiron Grants Program](https://medium.com/gridiron/announcing-gridiron-grants-78aa28562db6)
+   - have you received or applied for grants or funding? for similar work? eg. from the [Gridiron Grants Program](https://medium.com/gridchain/announcing-gridiron-grants-78aa28562db6)
    - how will you and/or your organization benefit?
    - do you see this work continuing in the future and is there a plan?
    - what are the risks involved with this work?
@@ -135,7 +135,7 @@ Assume that many people will stop reading at this point. However, it is importan
    - past work you've done eg. include your Github
    - some sort of proof of who you are eg. Keybase
 2. Background information - promote understanding of the ERC-20 Module
-   - a mention of the original [blog post](https://medium.com/gridiron/introducing-gridiron-erc20-module-f40a61e05273) that introduced the ERC-20 Module
+   - a mention of the original [blog post](https://medium.com/gridchain/introducing-gridiron-erc20-module-f40a61e05273) that introduced the ERC-20 Module
    - a brief explanation of what the ERC-20 Module does
    - a mention of the [ERC-20 Module documentation](https://docs.gridiron.org/modules/erc20/)
 3. Solution - generally how ERC-20 Module changes will be made

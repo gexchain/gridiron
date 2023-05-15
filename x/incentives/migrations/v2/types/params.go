@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package types
 
@@ -22,9 +22,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/gridiron/gridiron/v11/x/incentives/types"
+	"github.com/gridchain/gridiron/v11/x/incentives/types"
 
-	epochstypes "github.com/gridiron/gridiron/v11/x/epochs/types"
+	epochstypes "github.com/gridchain/gridiron/v11/x/epochs/types"
 )
 
 var _ types.LegacyParams = &V2Params{}

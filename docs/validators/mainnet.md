@@ -12,12 +12,12 @@ This document outlines the steps to join an existing testnet {synopsis}
 
 ## Mainnet
 
-You need to set the **genesis file** and **seeds**. If you need more information about past networks, check our [mainnet repo](https://github.com/gridiron/mainnet). The table below gives an overview of all Mainnet Chain IDs. Note that, the displayed version might differ when an active Software Upgrade proposal exists on chain.
+You need to set the **genesis file** and **seeds**. If you need more information about past networks, check our [mainnet repo](https://github.com/gridchain/mainnet). The table below gives an overview of all Mainnet Chain IDs. Note that, the displayed version might differ when an active Software Upgrade proposal exists on chain.
 
 | Chain ID       | Description     | Site                                                               | Version                                                      | Status  |
 | -------------- | --------------- | ------------------------------------------------------------------ | ------------------------------------------------------------ | ------- |
-| `gridiron_9001-2` | Gridiron Mainnet 2 | [Gridiron](https://github.com/gridiron/mainnet/tree/main/gridiron_9001-2) | [`{{ $themeConfig.project.mainnet_version }}`](https://github.com/gridiron/gridiron/releases) | `Live`  |
-| `gridiron_9001-1` | Gridiron Mainnet 1 | [Gridiron](https://github.com/gridiron/mainnet/tree/main/gridiron_9001-1) | [`v2.0.1`](https://github.com/gridiron/gridiron/releases/v2.0.1) | `Stale` |
+| `gridiron_9001-2` | Gridiron Mainnet 2 | [Gridiron](https://github.com/gridchain/mainnet/tree/main/gridiron_9001-2) | [`{{ $themeConfig.project.mainnet_version }}`](https://github.com/gridchain/gridiron/releases) | `Live`  |
+| `gridiron_9001-1` | Gridiron Mainnet 1 | [Gridiron](https://github.com/gridchain/mainnet/tree/main/gridiron_9001-1) | [`v2.0.1`](https://github.com/gridchain/gridiron/releases/v2.0.1) | `Stale` |
 
 ::: warning
 **IMPORTANT:** If you join mainnet as a validator make sure you follow all the [security](./security/security.md) recommendations!
@@ -77,7 +77,7 @@ gridirond validate-genesis
 
 ### Add Seed Nodes
 
-Your node needs to know how to find [peers](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#peers). You'll need to add healthy [seed nodes](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#seed) to `$HOME/.gridirond/config/config.toml`. The [`mainnet`](https://github.com/gridiron/mainnet) repo contains links to some seed nodes.
+Your node needs to know how to find [peers](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#peers). You'll need to add healthy [seed nodes](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#seed) to `$HOME/.gridirond/config/config.toml`. The [`mainnet`](https://github.com/gridchain/mainnet) repo contains links to some seed nodes.
 
 Edit the file located in `~/.gridirond/config/config.toml` and the `seeds` to the following:
 
@@ -107,7 +107,7 @@ For more information on seeds and peers, you can the Tendermint [P2P documentati
 ### Add Persistent Peers
 
 We can set the [`persistent_peers`](https://docs.tendermint.com/v0.34/tendermint-core/using-tendermint.html#persistent-peer) field in `~/.gridirond/config/config.toml` to specify peers that your node will maintain persistent connections with. You can retrieve them from the list of
-available peers on the [`mainnet`](https://github.com/gridiron/mainnet) repo.
+available peers on the [`mainnet`](https://github.com/gridchain/mainnet) repo.
 
 A list of available persistent peers is also available in the `#find-peers` channel in the [Gridiron Discord](https://discord.gg/gridiron). You can get a random 10 entries from the `peers.txt` file in the `PEERS` variable by running the following command:
 

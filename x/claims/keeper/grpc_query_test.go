@@ -6,14 +6,14 @@ import (
 	"cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/gridiron/v11/testutil"
-	"github.com/gridiron/gridiron/v11/x/claims/types"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/gridiron/v11/testutil"
+	"github.com/gridchain/gridiron/v11/x/claims/types"
 )
 
 func (suite *KeeperTestSuite) TestTotalUnclaimed() {
 	ctx := sdk.WrapSDKContext(suite.ctx)
-	coins := sdk.NewCoins(sdk.NewCoin("agridiron", sdk.NewInt(1000)))
+	coins := sdk.NewCoins(sdk.NewCoin("afury", sdk.NewInt(1000)))
 
 	testCases := []struct {
 		name       string

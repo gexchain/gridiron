@@ -3,7 +3,7 @@ package types
 import (
 	"testing"
 
-	"github.com/gridiron/ethermint/tests"
+	"github.com/gridchain/ethermint/tests"
 	"github.com/stretchr/testify/require"
 )
 

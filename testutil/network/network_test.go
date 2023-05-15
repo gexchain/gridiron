@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/gridiron/ethermint/server/config"
-	"github.com/gridiron/ethermint/testutil/network"
+	"github.com/gridchain/ethermint/server/config"
+	"github.com/gridchain/ethermint/testutil/network"
 
-	gridironnetwork "github.com/gridiron/gridiron/v11/testutil/network"
+	gridironnetwork "github.com/gridchain/gridiron/v11/testutil/network"
 )
 
 type IntegrationTestSuite struct {

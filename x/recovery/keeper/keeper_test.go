@@ -11,15 +11,15 @@ import (
 	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
 	"github.com/tendermint/tendermint/version"
 
-	"github.com/gridiron/ethermint/tests"
-	feemarkettypes "github.com/gridiron/ethermint/x/feemarket/types"
+	"github.com/gridchain/ethermint/tests"
+	feemarkettypes "github.com/gridchain/ethermint/x/feemarket/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/gridiron/gridiron/v11/app"
-	claimstypes "github.com/gridiron/gridiron/v11/x/claims/types"
-	"github.com/gridiron/gridiron/v11/x/recovery/types"
+	"github.com/gridchain/gridiron/v11/app"
+	claimstypes "github.com/gridchain/gridiron/v11/x/claims/types"
+	"github.com/gridchain/gridiron/v11/x/recovery/types"
 )
 
 var (

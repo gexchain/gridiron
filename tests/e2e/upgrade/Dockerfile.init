@@ -6,7 +6,7 @@ RUN apt-get update -y
 # jq needs to perform changes of node parameters
 RUN apt-get install ca-certificates jq -y
 
-WORKDIR /go/src/github.com/gridiron/gridiron
+WORKDIR /go/src/github.com/gridchain/gridiron
 
 COPY ./upgrade/upgrade-init.sh .
 

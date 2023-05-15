@@ -21,7 +21,7 @@ Application-wise, the ERC-20 module allows DeFi protocols to seamlessly integrat
 
 Registering a native Cosmos Coin means registering a new mapping between a Cosmos Coin denomination and a new ERC-20 token contract, also known as a Token Pair. Token Pairs enable users to convert ERC-20 tokens into their native Cosmos Coin representation (and vice-versa), and can only be created via a governance proposal.
 
-More information can be found in [this blog post](https://medium.com/gridiron/introducing-gridiron-erc20-module-f40a61e05273), which introduced the ERC-20 Module on Gridiron.
+More information can be found in [this blog post](https://medium.com/gridchain/introducing-gridiron-erc20-module-f40a61e05273), which introduced the ERC-20 Module on Gridiron.
 
 To register a Cosmos Coin, consider the following stages:
 
@@ -35,7 +35,7 @@ The following topics must be addressed when drafting a Cosmos Coin Proposal:
 
 2. Promote understanding of the ERC-20 Module.
 
-  Make sure to mention the original [blog post](https://medium.com/gridiron/introducing-gridiron-erc20-module-f40a61e05273) that introduced the ERC-20 Module, along with a brief explanation of what the ERC-20 Module does. It's also a good idea to link the [ERC-20 Module documentation](https://docs.gridiron.org/modules/erc20/)!
+  Make sure to mention the original [blog post](https://medium.com/gridchain/introducing-gridiron-erc20-module-f40a61e05273) that introduced the ERC-20 Module, along with a brief explanation of what the ERC-20 Module does. It's also a good idea to link the [ERC-20 Module documentation](https://docs.gridiron.org/modules/erc20/)!
 
 3. Describe how ERC-20 Module changes will be made.
 
@@ -45,7 +45,7 @@ Remember to provide links to the relevant [Commonwealth Gridiron community](http
 
 ## Adding Network to Gridiron Chain Registry
 
-All chain registry information can be found [here](https://github.com/gridiron/chain-token-registry). The [Cosmos Chain Registry](https://github.com/cosmos/chain-registry) is used to pull in the list of RPC, gRPC, and REST endpoints to power the Gridiron Dashboard. To add chain registry information, please submit a pull request with the network details. Pull requests should be merged one business day after governance passes.
+All chain registry information can be found [here](https://github.com/gridchain/chain-token-registry). The [Cosmos Chain Registry](https://github.com/cosmos/chain-registry) is used to pull in the list of RPC, gRPC, and REST endpoints to power the Gridiron Dashboard. To add chain registry information, please submit a pull request with the network details. Pull requests should be merged one business day after governance passes.
 
 ## Submitting the Cosmos Coin Proposal
 

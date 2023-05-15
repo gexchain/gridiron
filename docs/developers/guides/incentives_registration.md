@@ -32,7 +32,7 @@ The following topics must be addressed when drafting a Contract Incentives Propo
 
 2. Promote understanding of the `x/incentives` Module.
 
-    Make sure to mention the [`x/incentives` Module Documentation](../../../x/incentives/spec/README.md) along with a brief explanation of what the `x/incentives` Module does. It's also a good idea to link the [Gridiron Token Model](https://medium.com/gridiron/the-gridiron-token-model-edc07014978b), since incentives are directly intertwined with Gridiron tokenomics!
+    Make sure to mention the [`x/incentives` Module Documentation](../../../x/incentives/spec/README.md) along with a brief explanation of what the `x/incentives` Module does. It's also a good idea to link the [Gridiron Token Model](https://medium.com/gridchain/the-gridiron-token-model-edc07014978b), since incentives are directly intertwined with Gridiron tokenomics!
 
 3. Describe what changes are being made, and why they are required.
 

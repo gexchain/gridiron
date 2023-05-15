@@ -11,7 +11,7 @@ Connect your Metamask wallet with Gridiron. {synopsis}
 The [MetaMask](https://metamask.io/) browser extension is a wallet for accessing Ethereum-enabled applications and managing user identities. It can be used to connect to {{ $themeConfig.project.name }} through the official testnet or via a locally-running {{ $themeConfig.project.name }} node.
 
 ::: tip
-If you are planning on developing on Gridiron locally and you haven’t already set up your own local node, refer to [the quickstart tutorial](../../validators/quickstart/run_node.md), or follow the instructions in the [GitHub repository](https://github.com/gridiron/gridiron/).
+If you are planning on developing on Gridiron locally and you haven’t already set up your own local node, refer to [the quickstart tutorial](../../validators/quickstart/run_node.md), or follow the instructions in the [GitHub repository](https://github.com/gridchain/gridiron/).
 :::
 
 ## Adding a New Network

@@ -5,14 +5,14 @@ import (
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"testing"
 
-	"github.com/gridiron/ethermint/encoding"
-	v2 "github.com/gridiron/gridiron/v11/x/revenue/migrations/v2"
-	v2types "github.com/gridiron/gridiron/v11/x/revenue/migrations/v2/types"
-	"github.com/gridiron/gridiron/v11/x/revenue/types"
+	"github.com/gridchain/ethermint/encoding"
+	v2 "github.com/gridchain/gridiron/v11/x/revenue/migrations/v2"
+	v2types "github.com/gridchain/gridiron/v11/x/revenue/migrations/v2/types"
+	"github.com/gridchain/gridiron/v11/x/revenue/types"
 
 	"github.com/cosmos/cosmos-sdk/testutil"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/gridiron/ethermint/app"
+	"github.com/gridchain/ethermint/app"
 	"github.com/stretchr/testify/require"
 )
 

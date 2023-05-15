@@ -12,13 +12,13 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package statik
 
 // unnamed import of statik for swagger UI support
 // override ethermint statik by importing it
 // nolint
-import _ "github.com/gridiron/ethermint/client/docs/statik"
+import _ "github.com/gridchain/ethermint/client/docs/statik"
 
-// This just for fixing the error in importing empty github.com/gridiron/ethermint/client/docs/statik
+// This just for fixing the error in importing empty github.com/gridchain/ethermint/client/docs/statik

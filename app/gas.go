@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package app
 
@@ -21,7 +21,7 @@ import (
 )
 
 var (
-	// MainnetMinGasPrices defines 20B agridiron (or atgridiron) as the minimum gas price value on the fee market module.
+	// MainnetMinGasPrices defines 20B afury (or atgridiron) as the minimum gas price value on the fee market module.
 	// See https://commonwealth.im/gridiron/discussion/5073-global-min-gas-price-value-for-cosmos-sdk-and-evm-transaction-choosing-a-value for reference
 	MainnetMinGasPrices = sdk.NewDec(20_000_000_000)
 	// MainnetMinGasMultiplier defines the min gas multiplier value on the fee market module.

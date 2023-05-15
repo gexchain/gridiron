@@ -12,14 +12,14 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package types
 
 import (
 	"strings"
 
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
 
 	errorsmod "cosmossdk.io/errors"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
@@ -35,7 +35,7 @@ const (
 	// TestnetChainID defines the Gridiron EIP155 chain ID for testnet
 	TestnetChainID = "gridiron_9000"
 	// BaseDenom defines the Gridiron mainnet denomination
-	BaseDenom = "agridiron"
+	BaseDenom = "afury"
 )
 
 // IsMainnet returns true if the chain-id has the Gridiron mainnet EIP155 chain prefix.

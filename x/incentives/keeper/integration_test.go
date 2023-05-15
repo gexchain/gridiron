@@ -12,10 +12,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	ethermint "github.com/gridiron/ethermint/types"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
+	ethermint "github.com/gridchain/ethermint/types"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
 
-	"github.com/gridiron/gridiron/v11/x/incentives/types"
+	"github.com/gridchain/gridiron/v11/x/incentives/types"
 )
 
 var _ = Describe("Performing EVM transactions", Ordered, func() {

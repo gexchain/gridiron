@@ -6,7 +6,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/gridiron/gridiron/v11/x/epochs/types"
+	"github.com/gridchain/gridiron/v11/x/epochs/types"
 )
 
 func (suite *KeeperTestSuite) TestEpochInfo() {

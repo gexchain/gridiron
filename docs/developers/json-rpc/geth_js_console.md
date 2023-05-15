@@ -44,11 +44,11 @@ Make sure you have installed all the dependencies mentioned in the **[Pre-requis
 
 ## Run Gridiron local node
 
-- Clone the [gridiron repository](https://github.com/gridiron/gridiron) (if you haven’t already)
+- Clone the [gridiron repository](https://github.com/gridchain/gridiron) (if you haven’t already)
 - Run the `local_node.sh` script to start a local node
 
 ```bash
-git clone https://github.com/gridiron/gridiron.git
+git clone https://github.com/gridchain/gridiron.git
 cd gridiron
 ./local_node.sh
 ```

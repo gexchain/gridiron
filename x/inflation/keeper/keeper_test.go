@@ -17,11 +17,11 @@ import (
 	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
 	"github.com/tendermint/tendermint/version"
 
-	evm "github.com/gridiron/ethermint/x/evm/types"
+	evm "github.com/gridchain/ethermint/x/evm/types"
 
-	"github.com/gridiron/gridiron/v11/app"
-	epochstypes "github.com/gridiron/gridiron/v11/x/epochs/types"
-	"github.com/gridiron/gridiron/v11/x/inflation/types"
+	"github.com/gridchain/gridiron/v11/app"
+	epochstypes "github.com/gridchain/gridiron/v11/x/epochs/types"
+	"github.com/gridchain/gridiron/v11/x/inflation/types"
 )
 
 var denomMint = types.DefaultInflationDenom

@@ -4,7 +4,7 @@ package gridiron.incentives.v1;
 import "cosmos/base/v1beta1/coin.proto";
 import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
-option go_package = "github.com/gridiron/gridiron/v11/x/incentives/types";
+option go_package = "github.com/gridchain/gridiron/v11/x/incentives/types";
 
 // Incentive defines an instance that organizes distribution conditions for a
 // given smart contract

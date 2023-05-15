@@ -19,5 +19,5 @@ for dir in $proto_dirs; do
 done
 
 # move proto files to the right places
-cp -r github.com/gridiron/gridiron/v*/x/* x/
+cp -r github.com/gridchain/gridiron/v*/x/* x/
 rm -rf github.com

@@ -12,15 +12,15 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package v3
 
 import (
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	v3types "github.com/gridiron/gridiron/v11/x/erc20/migrations/v3/types"
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	v3types "github.com/gridchain/gridiron/v11/x/erc20/migrations/v3/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 )
 
 var isTrue = []byte{0x01}

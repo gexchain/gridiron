@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package app
 
@@ -36,13 +36,13 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	claimstypes "github.com/gridiron/gridiron/v11/x/claims/types"
+	claimstypes "github.com/gridchain/gridiron/v11/x/claims/types"
 
-	"github.com/gridiron/ethermint/encoding"
-	feemarkettypes "github.com/gridiron/ethermint/x/feemarket/types"
+	"github.com/gridchain/ethermint/encoding"
+	feemarkettypes "github.com/gridchain/ethermint/x/feemarket/types"
 
-	"github.com/gridiron/gridiron/v11/cmd/config"
-	"github.com/gridiron/gridiron/v11/types"
+	"github.com/gridchain/gridiron/v11/cmd/config"
+	"github.com/gridchain/gridiron/v11/types"
 )
 
 func init() {

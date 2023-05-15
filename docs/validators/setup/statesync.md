@@ -200,7 +200,7 @@ wget -O $HOME/genesis.json https://archive.gridiron.org/mainnet/genesis.json
 ### Install gridirond
 
 ```bash
-git clone https://github.com/gridiron/gridiron.git && \ 
+git clone https://github.com/gridchain/gridiron.git && \ 
 cd gridiron && \ 
 make install
 ```

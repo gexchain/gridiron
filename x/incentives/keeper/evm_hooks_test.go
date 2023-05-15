@@ -10,13 +10,13 @@ import (
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/gridiron/ethermint/tests"
-	ethermint "github.com/gridiron/ethermint/types"
-	evm "github.com/gridiron/ethermint/x/evm/types"
+	"github.com/gridchain/ethermint/tests"
+	ethermint "github.com/gridchain/ethermint/types"
+	evm "github.com/gridchain/ethermint/x/evm/types"
 
-	"github.com/gridiron/gridiron/v11/testutil"
-	"github.com/gridiron/gridiron/v11/x/incentives/types"
-	vestingtypes "github.com/gridiron/gridiron/v11/x/vesting/types"
+	"github.com/gridchain/gridiron/v11/testutil"
+	"github.com/gridchain/gridiron/v11/x/incentives/types"
+	vestingtypes "github.com/gridchain/gridiron/v11/x/vesting/types"
 )
 
 // ensureHooksSet tries to set the hooks on EVMKeeper, this will fail if the

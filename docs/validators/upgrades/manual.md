@@ -14,7 +14,7 @@ Learn how to manually upgrade your node. {synopsis}
 
 Before upgrading the Gridiron version. Stop your instance of `gridirond` using `Ctrl/Cmd+C`.
 
-Next, upgrade the software to the desired release version. Check the Gridiron [releases page](https://github.com/gridiron/gridiron/releases) for details on each release.
+Next, upgrade the software to the desired release version. Check the Gridiron [releases page](https://github.com/gridchain/gridiron/releases) for details on each release.
 
 ::: danger
 Ensure that the version installed matches the one needed for the network you are running (mainnet or testnet).
@@ -53,8 +53,8 @@ If the software version does not match, then please check your `$PATH` to ensure
 ::: tip
 You can find the latest `genesis.json` file for mainnet or testnet in the following repositories:
 
-- **Mainnet**: [github.com/gridiron/mainnet](https://github.com/gridiron/mainnet)
-- **Testnet**: [github.com/gridiron/testnets](https://github.com/gridiron/testnets)
+- **Mainnet**: [github.com/gridchain/mainnet](https://github.com/gridchain/mainnet)
+- **Testnet**: [github.com/gridchain/testnets](https://github.com/gridchain/testnets)
 :::
 
 Save the new genesis as `new_genesis.json`. Then, replace the old `genesis.json` located in your `config/` directory with `new_genesis.json`:

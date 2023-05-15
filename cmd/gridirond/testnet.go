@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package main
 
@@ -53,16 +53,16 @@ import (
 	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/gridiron/ethermint/crypto/hd"
-	"github.com/gridiron/ethermint/server/config"
-	srvflags "github.com/gridiron/ethermint/server/flags"
+	"github.com/gridchain/ethermint/crypto/hd"
+	"github.com/gridchain/ethermint/server/config"
+	srvflags "github.com/gridchain/ethermint/server/flags"
 
-	ethermint "github.com/gridiron/ethermint/types"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
+	ethermint "github.com/gridchain/ethermint/types"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
 
-	cmdcfg "github.com/gridiron/gridiron/v11/cmd/config"
-	gridironkr "github.com/gridiron/gridiron/v11/crypto/keyring"
-	"github.com/gridiron/gridiron/v11/testutil/network"
+	cmdcfg "github.com/gridchain/gridiron/v11/cmd/config"
+	gridironkr "github.com/gridchain/gridiron/v11/crypto/keyring"
+	"github.com/gridchain/gridiron/v11/testutil/network"
 )
 
 var (

@@ -6,7 +6,7 @@ import "cosmos_proto/cosmos.proto";
 import "gridiron/claims/v1/genesis.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/gridiron/gridiron/v11/x/claims/types";
+option go_package = "github.com/gridchain/gridiron/v11/x/claims/types";
 
 // Msg defines the claims Msg service.
 service Msg {

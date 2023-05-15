@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gridiron/gridiron.git"
+    "url": "git+https://github.com/gridchain/gridiron.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gridiron/gridiron/issues"
+    "url": "https://github.com/gridchain/gridiron/issues"
   },
-  "homepage": "https://github.com/gridiron/gridiron#readme"
+  "homepage": "https://github.com/gridchain/gridiron#readme"
 }

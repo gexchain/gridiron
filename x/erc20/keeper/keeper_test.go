@@ -36,27 +36,27 @@ import (
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	"github.com/gridiron/ethermint/server/config"
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/ethermint/x/evm/statedb"
-	evm "github.com/gridiron/ethermint/x/evm/types"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
-	feemarkettypes "github.com/gridiron/ethermint/x/feemarket/types"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	"github.com/gridchain/ethermint/server/config"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/ethermint/x/evm/statedb"
+	evm "github.com/gridchain/ethermint/x/evm/types"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
+	feemarkettypes "github.com/gridchain/ethermint/x/feemarket/types"
 
-	"github.com/gridiron/gridiron/v11/app"
-	"github.com/gridiron/gridiron/v11/contracts"
-	ibctesting "github.com/gridiron/gridiron/v11/ibc/testing"
-	claimstypes "github.com/gridiron/gridiron/v11/x/claims/types"
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
-	inflationtypes "github.com/gridiron/gridiron/v11/x/inflation/types"
+	"github.com/gridchain/gridiron/v11/app"
+	"github.com/gridchain/gridiron/v11/contracts"
+	ibctesting "github.com/gridchain/gridiron/v11/ibc/testing"
+	claimstypes "github.com/gridchain/gridiron/v11/x/claims/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
+	inflationtypes "github.com/gridchain/gridiron/v11/x/inflation/types"
 
 	transfertypes "github.com/cosmos/ibc-go/v6/modules/apps/transfer/types"
 	clienttypes "github.com/cosmos/ibc-go/v6/modules/core/02-client/types"
 	channeltypes "github.com/cosmos/ibc-go/v6/modules/core/04-channel/types"
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 	ibcgotestinghelpers "github.com/cosmos/ibc-go/v6/testing/simapp/helpers"
-	teststypes "github.com/gridiron/gridiron/v11/types/tests"
+	teststypes "github.com/gridchain/gridiron/v11/types/tests"
 )
 
 type KeeperTestSuite struct {
@@ -217,7 +217,7 @@ func (suite *KeeperTestSuite) SendAndReceiveMessage(path *ibcgotesting.Path, ori
 	suite.sendAndReceiveMessage(path, path.EndpointA, path.EndpointB, origin, coin, amount, sender, receiver, seq, ibcCoinMetadata)
 }
 
-// Send back coins (from path endpoint B to A). In case of IBC coins need to provide ibcCoinMetadata (<port>/<channel>/<denom>, e.g.: "transfer/channel-0/agridiron") as input parameter.
+// Send back coins (from path endpoint B to A). In case of IBC coins need to provide ibcCoinMetadata (<port>/<channel>/<denom>, e.g.: "transfer/channel-0/afury") as input parameter.
 // We need this to instanciate properly a FungibleTokenPacketData https://github.com/cosmos/ibc-go/blob/main/docs/architecture/adr-001-coin-source-tracing.md
 func (suite *KeeperTestSuite) SendBackCoins(path *ibcgotesting.Path, origin *ibcgotesting.TestChain, coin string, amount int64, sender, receiver string, seq uint64, ibcCoinMetadata string) {
 	// Send coin from B to A
@@ -255,7 +255,7 @@ func (suite *KeeperTestSuite) SetupIBCTest() {
 
 	s.app = suite.GridironChain.App.(*app.Gridiron)
 	evmParams := s.app.EvmKeeper.GetParams(s.GridironChain.GetContext())
-	evmParams.EvmDenom = "agridiron"
+	evmParams.EvmDenom = "afury"
 	s.app.EvmKeeper.SetParams(s.GridironChain.GetContext(), evmParams)
 
 	// Increase max gas
@@ -273,7 +273,7 @@ func (suite *KeeperTestSuite) SetupIBCTest() {
 	_, err = s.app.EvmKeeper.GetCoinbaseAddress(suite.GridironChain.GetContext(), sdk.ConsAddress(suite.GridironChain.CurrentHeader.ProposerAddress))
 	suite.Require().NoError(err)
 	// Mint coins locked on the gridiron account generated with secp.
-	coinGridiron := sdk.NewCoin("agridiron", sdk.NewInt(10000))
+	coinGridiron := sdk.NewCoin("afury", sdk.NewInt(10000))
 	coins := sdk.NewCoins(coinGridiron)
 	err = s.app.BankKeeper.MintCoins(suite.GridironChain.GetContext(), inflationtypes.ModuleName, coins)
 	suite.Require().NoError(err)
@@ -288,7 +288,7 @@ func (suite *KeeperTestSuite) SetupIBCTest() {
 	err = s.app.BankKeeper.MintCoins(s.GridironChain.GetContext(), types.ModuleName, coins)
 	s.Require().NoError(err)
 
-	// Mint coins on the osmosis side which we'll use to unlock our agridiron
+	// Mint coins on the osmosis side which we'll use to unlock our afury
 	coinOsmo := sdk.NewCoin("uosmo", sdk.NewInt(10000000))
 	coins = sdk.NewCoins(coinOsmo)
 	err = suite.IBCOsmosisChain.GetSimApp().BankKeeper.MintCoins(suite.IBCOsmosisChain.GetContext(), minttypes.ModuleName, coins)
@@ -296,7 +296,7 @@ func (suite *KeeperTestSuite) SetupIBCTest() {
 	err = suite.IBCOsmosisChain.GetSimApp().BankKeeper.SendCoinsFromModuleToAccount(suite.IBCOsmosisChain.GetContext(), minttypes.ModuleName, suite.IBCOsmosisChain.SenderAccount.GetAddress(), coins)
 	suite.Require().NoError(err)
 
-	// Mint coins on the cosmos side which we'll use to unlock our agridiron
+	// Mint coins on the cosmos side which we'll use to unlock our afury
 	coinAtom := sdk.NewCoin("uatom", sdk.NewInt(10))
 	coins = sdk.NewCoins(coinAtom)
 	err = suite.IBCCosmosChain.GetSimApp().BankKeeper.MintCoins(suite.IBCCosmosChain.GetContext(), minttypes.ModuleName, coins)
@@ -323,7 +323,7 @@ func (suite *KeeperTestSuite) SetupIBCTest() {
 	suite.Require().Equal("connection-0", suite.pathOsmosisGridiron.EndpointA.ConnectionID)
 	suite.Require().Equal("channel-0", suite.pathOsmosisGridiron.EndpointA.ChannelID)
 
-	coinGridiron = sdk.NewCoin("agridiron", sdk.NewInt(1000000000000000000))
+	coinGridiron = sdk.NewCoin("afury", sdk.NewInt(1000000000000000000))
 	coins = sdk.NewCoins(coinGridiron)
 	err = s.app.BankKeeper.MintCoins(suite.GridironChain.GetContext(), types.ModuleName, coins)
 	suite.Require().NoError(err)

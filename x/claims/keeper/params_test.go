@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/gridiron/gridiron/v11/x/claims/types"
+	"github.com/gridchain/gridiron/v11/x/claims/types"
 )
 
 func (suite *KeeperTestSuite) TestParams() {

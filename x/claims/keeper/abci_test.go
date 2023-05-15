@@ -9,11 +9,11 @@ import (
 	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/gridiron/ethermint/tests"
-	ethermint "github.com/gridiron/ethermint/types"
-	"github.com/gridiron/gridiron/v11/testutil"
-	"github.com/gridiron/gridiron/v11/x/claims/types"
-	vestingtypes "github.com/gridiron/gridiron/v11/x/vesting/types"
+	"github.com/gridchain/ethermint/tests"
+	ethermint "github.com/gridchain/ethermint/types"
+	"github.com/gridchain/gridiron/v11/testutil"
+	"github.com/gridchain/gridiron/v11/x/claims/types"
+	vestingtypes "github.com/gridchain/gridiron/v11/x/vesting/types"
 )
 
 func (suite *KeeperTestSuite) TestEndBlock() {

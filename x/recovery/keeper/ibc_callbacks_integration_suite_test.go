@@ -15,13 +15,13 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v6/modules/core/04-channel/types"
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 
-	ibctesting "github.com/gridiron/gridiron/v11/ibc/testing"
+	ibctesting "github.com/gridchain/gridiron/v11/ibc/testing"
 
 	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	"github.com/gridiron/gridiron/v11/app"
-	claimstypes "github.com/gridiron/gridiron/v11/x/claims/types"
-	inflationtypes "github.com/gridiron/gridiron/v11/x/inflation/types"
-	"github.com/gridiron/gridiron/v11/x/recovery/types"
+	"github.com/gridchain/gridiron/v11/app"
+	claimstypes "github.com/gridchain/gridiron/v11/x/claims/types"
+	inflationtypes "github.com/gridchain/gridiron/v11/x/inflation/types"
+	"github.com/gridchain/gridiron/v11/x/recovery/types"
 )
 
 type IBCTestingSuite struct {
@@ -60,14 +60,14 @@ func (suite *IBCTestingSuite) SetupTest() {
 	suite.coordinator.CommitNBlocks(suite.IBCCosmosChain, 2)
 
 	// Mint coins locked on the gridiron account generated with secp.
-	coinGridiron := sdk.NewCoin("agridiron", sdk.NewInt(10000))
+	coinGridiron := sdk.NewCoin("afury", sdk.NewInt(10000))
 	coins := sdk.NewCoins(coinGridiron)
 	err := suite.GridironChain.App.(*app.Gridiron).BankKeeper.MintCoins(suite.GridironChain.GetContext(), inflationtypes.ModuleName, coins)
 	suite.Require().NoError(err)
 	err = suite.GridironChain.App.(*app.Gridiron).BankKeeper.SendCoinsFromModuleToAccount(suite.GridironChain.GetContext(), inflationtypes.ModuleName, suite.IBCOsmosisChain.SenderAccount.GetAddress(), coins)
 	suite.Require().NoError(err)
 
-	// Mint coins on the osmosis side which we'll use to unlock our agridiron
+	// Mint coins on the osmosis side which we'll use to unlock our afury
 	coinOsmo := sdk.NewCoin("uosmo", sdk.NewInt(10))
 	coins = sdk.NewCoins(coinOsmo)
 	err = suite.IBCOsmosisChain.GetSimApp().BankKeeper.MintCoins(suite.IBCOsmosisChain.GetContext(), minttypes.ModuleName, coins)
@@ -75,7 +75,7 @@ func (suite *IBCTestingSuite) SetupTest() {
 	err = suite.IBCOsmosisChain.GetSimApp().BankKeeper.SendCoinsFromModuleToAccount(suite.IBCOsmosisChain.GetContext(), minttypes.ModuleName, suite.IBCOsmosisChain.SenderAccount.GetAddress(), coins)
 	suite.Require().NoError(err)
 
-	// Mint coins on the cosmos side which we'll use to unlock our agridiron
+	// Mint coins on the cosmos side which we'll use to unlock our afury
 	coinAtom := sdk.NewCoin("uatom", sdk.NewInt(10))
 	coins = sdk.NewCoins(coinAtom)
 	err = suite.IBCCosmosChain.GetSimApp().BankKeeper.MintCoins(suite.IBCCosmosChain.GetContext(), minttypes.ModuleName, coins)

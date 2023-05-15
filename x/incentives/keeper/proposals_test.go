@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/gridiron/ethermint/tests"
-	"github.com/gridiron/gridiron/v11/x/incentives/types"
+	"github.com/gridchain/ethermint/tests"
+	"github.com/gridchain/gridiron/v11/x/incentives/types"
 )
 
 func (suite KeeperTestSuite) TestRegisterIncentive() {

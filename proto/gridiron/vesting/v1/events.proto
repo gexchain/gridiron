@@ -1,7 +1,7 @@
 syntax = "proto3";
 package gridiron.vesting.v1;
 
-option go_package = "github.com/gridiron/gridiron/v11/x/vesting/types";
+option go_package = "github.com/gridchain/gridiron/v11/x/vesting/types";
 
 // EventCreateClawbackVestingAccount defines the event type
 // for creating a clawback vesting account

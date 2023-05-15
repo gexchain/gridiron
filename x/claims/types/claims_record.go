@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package types
 
@@ -28,7 +28,7 @@ import (
 var (
 	// IBCTriggerAmt is the amount required to trigger a merge/migration of claims records
 	IBCTriggerAmt = "63743"
-	// GenesisDust is the amount of agridiron sent on genesis for accounts to be able to claim
+	// GenesisDust is the amount of afury sent on genesis for accounts to be able to claim
 	GenesisDust = int64(gomath.Pow10(15))
 )
 

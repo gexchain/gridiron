@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package network
 
@@ -43,10 +43,10 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	inflationtypes "github.com/gridiron/gridiron/v11/x/inflation/types"
+	inflationtypes "github.com/gridchain/gridiron/v11/x/inflation/types"
 
-	"github.com/gridiron/ethermint/server"
-	evmtypes "github.com/gridiron/ethermint/x/evm/types"
+	"github.com/gridchain/ethermint/server"
+	evmtypes "github.com/gridchain/ethermint/x/evm/types"
 )
 
 func startInProcess(cfg Config, val *Validator) error {

@@ -29,17 +29,17 @@ import (
 	"github.com/tendermint/tendermint/version"
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/gridiron/ethermint/crypto/ethsecp256k1"
-	"github.com/gridiron/ethermint/encoding"
-	"github.com/gridiron/ethermint/server/config"
-	"github.com/gridiron/ethermint/tests"
-	ethermint "github.com/gridiron/ethermint/types"
-	evm "github.com/gridiron/ethermint/x/evm/types"
+	"github.com/gridchain/ethermint/crypto/ethsecp256k1"
+	"github.com/gridchain/ethermint/encoding"
+	"github.com/gridchain/ethermint/server/config"
+	"github.com/gridchain/ethermint/tests"
+	ethermint "github.com/gridchain/ethermint/types"
+	evm "github.com/gridchain/ethermint/x/evm/types"
 
-	"github.com/gridiron/gridiron/v11/app"
-	"github.com/gridiron/gridiron/v11/contracts"
-	epochstypes "github.com/gridiron/gridiron/v11/x/epochs/types"
-	"github.com/gridiron/gridiron/v11/x/incentives/types"
+	"github.com/gridchain/gridiron/v11/app"
+	"github.com/gridchain/gridiron/v11/contracts"
+	epochstypes "github.com/gridchain/gridiron/v11/x/epochs/types"
+	"github.com/gridchain/gridiron/v11/x/incentives/types"
 )
 
 var (

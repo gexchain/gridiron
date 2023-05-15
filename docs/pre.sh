@@ -3,7 +3,7 @@
 # Paths
 #
 COSMOS_URL=https://raw.githubusercontent.com/cosmos/cosmos-sdk/main
-ETHERMINT_URL=https://github.com/gridiron/ethermint
+ETHERMINT_URL=https://github.com/gridchain/ethermint
 IBC_GO_URL=https://github.com/cosmos/ibc-go.git
 # Formatting script
 FORMAT=./format/format_cosmos_specs.py

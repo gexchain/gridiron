@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package vesting
 
@@ -34,9 +34,9 @@ import (
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 
-	"github.com/gridiron/gridiron/v11/x/vesting/client/cli"
-	"github.com/gridiron/gridiron/v11/x/vesting/keeper"
-	"github.com/gridiron/gridiron/v11/x/vesting/types"
+	"github.com/gridchain/gridiron/v11/x/vesting/client/cli"
+	"github.com/gridchain/gridiron/v11/x/vesting/keeper"
+	"github.com/gridchain/gridiron/v11/x/vesting/types"
 )
 
 var (

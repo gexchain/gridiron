@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package main
 
@@ -51,17 +51,17 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	ethermintclient "github.com/gridiron/ethermint/client"
-	"github.com/gridiron/ethermint/client/debug"
-	"github.com/gridiron/ethermint/encoding"
-	"github.com/gridiron/ethermint/ethereum/eip712"
-	ethermintserver "github.com/gridiron/ethermint/server"
-	servercfg "github.com/gridiron/ethermint/server/config"
-	srvflags "github.com/gridiron/ethermint/server/flags"
+	ethermintclient "github.com/gridchain/ethermint/client"
+	"github.com/gridchain/ethermint/client/debug"
+	"github.com/gridchain/ethermint/encoding"
+	"github.com/gridchain/ethermint/ethereum/eip712"
+	ethermintserver "github.com/gridchain/ethermint/server"
+	servercfg "github.com/gridchain/ethermint/server/config"
+	srvflags "github.com/gridchain/ethermint/server/flags"
 
-	"github.com/gridiron/gridiron/v11/app"
-	cmdcfg "github.com/gridiron/gridiron/v11/cmd/config"
-	gridironkr "github.com/gridiron/gridiron/v11/crypto/keyring"
+	"github.com/gridchain/gridiron/v11/app"
+	cmdcfg "github.com/gridchain/gridiron/v11/cmd/config"
+	gridironkr "github.com/gridchain/gridiron/v11/crypto/keyring"
 )
 
 const (

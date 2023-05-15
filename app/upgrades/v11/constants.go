@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package v11
 
@@ -23,7 +23,7 @@ const (
 	// UpgradeName is the shared upgrade plan name for mainnet
 	UpgradeName = "v11.0.0"
 	// UpgradeInfo defines the binaries that will be used for the upgrade
-	UpgradeInfo = `'{"binaries":{"darwin/arm64":"https://github.com/gridiron/gridiron/releases/download/v11.0.0/gridiron_11.0.0_Darwin_arm64.tar.gz","darwin/amd64":"https://github.com/gridiron/gridiron/releases/download/v11.0.0/gridiron_11.0.0_Darwin_amd64.tar.gz","linux/arm64":"https://github.com/gridiron/gridiron/releases/download/v11.0.0/gridiron_11.0.0_Linux_arm64.tar.gz","linux/amd64":"https://github.com/gridiron/gridiron/releases/download/v11.0.0/gridiron_11.0.0_Linux_amd64.tar.gz","windows/x86_64":"https://github.com/gridiron/gridiron/releases/download/v11.0.0/gridiron_11.0.0-rc3_Windows_x86_64.zip"}}'`
+	UpgradeInfo = `'{"binaries":{"darwin/arm64":"https://github.com/gridchain/gridiron/releases/download/v11.0.0/gridiron_11.0.0_Darwin_arm64.tar.gz","darwin/amd64":"https://github.com/gridchain/gridiron/releases/download/v11.0.0/gridiron_11.0.0_Darwin_amd64.tar.gz","linux/arm64":"https://github.com/gridchain/gridiron/releases/download/v11.0.0/gridiron_11.0.0_Linux_arm64.tar.gz","linux/amd64":"https://github.com/gridchain/gridiron/releases/download/v11.0.0/gridiron_11.0.0_Linux_amd64.tar.gz","windows/x86_64":"https://github.com/gridchain/gridiron/releases/download/v11.0.0/gridiron_11.0.0-rc3_Windows_x86_64.zip"}}'`
 
 	// at the time of this migration, on mainnet, channels 0 to 37 were open
 	// so this migration covers those channels only

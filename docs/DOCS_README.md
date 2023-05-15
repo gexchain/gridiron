@@ -1,6 +1,6 @@
 # Updating the docs
 
-If you want to open a PR on the Cosmos SDK to update the documentation, please follow the guidelines in the [`CONTRIBUTING.md`](https://github.com/gridiron/gridiron/tree/main/CONTRIBUTING.md#updating-documentation)
+If you want to open a PR on the Cosmos SDK to update the documentation, please follow the guidelines in the [`CONTRIBUTING.md`](https://github.com/gridchain/gridiron/tree/main/CONTRIBUTING.md#updating-documentation)
 
 ## Translating
 
@@ -14,7 +14,7 @@ If you want to open a PR on the Cosmos SDK to update the documentation, please f
 The documentation for Gridiron is hosted at [docs.gridiron.org](https://docs.gridiron.org/)
 
 built from the files in this (`/docs`) directory for
-[master](https://github.com/gridiron/gridiron/tree/main/docs).
+[master](https://github.com/gridchain/gridiron/tree/main/docs).
 
 ### How It Works
 

@@ -12,12 +12,12 @@ import (
 	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
 	"github.com/tendermint/tendermint/version"
 
-	"github.com/gridiron/ethermint/tests"
-	feemarkettypes "github.com/gridiron/ethermint/x/feemarket/types"
+	"github.com/gridchain/ethermint/tests"
+	feemarkettypes "github.com/gridchain/ethermint/x/feemarket/types"
 
-	"github.com/gridiron/gridiron/v11/app"
-	"github.com/gridiron/gridiron/v11/x/revenue"
-	"github.com/gridiron/gridiron/v11/x/revenue/types"
+	"github.com/gridchain/gridiron/v11/app"
+	"github.com/gridchain/gridiron/v11/x/revenue"
+	"github.com/gridchain/gridiron/v11/x/revenue/types"
 )
 
 type GenesisTestSuite struct {

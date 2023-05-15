@@ -23,7 +23,7 @@ Below is a list of public block explorers that support Gridiron Mainnet and Test
 | Mintscan   | `cosmos` `evm` | [mintscan.io/gridiron](https://www.mintscan.io/gridiron)     |
 | Escan      | `cosmos` `evm` | [escan.live](https://escan.live)                       |
 | BigDipper  | `cosmos`       | [gridiron.bigdipper.live/](https://gridiron.bigdipper.live/) |
-| ATOMScan   | `cosmos`       | [atomscan.com/gridiron](https://atomscan.com/gridiron)       |
+| ATOMScan   | `cosmos`       | [atomscan.com/gridchain](https://atomscan.com/gridchain)       |
 | NGExplorer | `cosmos`       | [gridiron.explorers.guru](https://gridiron.explorers.guru)   |
 
 #### Testnet

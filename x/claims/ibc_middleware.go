@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package claims
 
@@ -24,8 +24,8 @@ import (
 	"github.com/cosmos/ibc-go/v6/modules/core/exported"
 
 	clienttypes "github.com/cosmos/ibc-go/v6/modules/core/02-client/types"
-	"github.com/gridiron/gridiron/v11/ibc"
-	"github.com/gridiron/gridiron/v11/x/claims/keeper"
+	"github.com/gridchain/gridiron/v11/ibc"
+	"github.com/gridchain/gridiron/v11/x/claims/keeper"
 )
 
 var _ porttypes.Middleware = &IBCMiddleware{}

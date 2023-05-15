@@ -11,7 +11,7 @@ echo "init Gridiron with moniker=$MONIKER and chain-id=$CHAINID"
 ./gridirond init $MONIKER --chain-id $CHAINID --home $DATA_DIR
 echo "prepare genesis: Allocate genesis accounts"
 ./gridirond add-genesis-account \
-"$(./gridirond keys show $KEY -a --home $DATA_DIR --keyring-backend test)" 1000000000000000000agridiron,1000000000000000000stake \
+"$(./gridirond keys show $KEY -a --home $DATA_DIR --keyring-backend test)" 1000000000000000000afury,1000000000000000000stake \
 --home $DATA_DIR --keyring-backend test
 echo "prepare genesis: Sign genesis transaction"
 ./gridirond gentx $KEY 1000000000000000000stake --keyring-backend test --home $DATA_DIR --keyring-backend test --chain-id $CHAINID

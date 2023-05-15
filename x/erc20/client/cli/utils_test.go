@@ -3,7 +3,7 @@ package cli
 import (
 	"testing"
 
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 	"github.com/stretchr/testify/require"
 )
 

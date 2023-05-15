@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package upgrade
 
@@ -63,7 +63,7 @@ func (m *Manager) CreateSubmitProposalExec(targetVersion, chainID string, upgrad
 		"software-upgrade",
 		targetVersion,
 		"--title=\"TEST\"",
-		"--deposit=500000agridiron",
+		"--deposit=500000afury",
 		"--description=\"Test upgrade proposal\"",
 		fmt.Sprintf("--upgrade-height=%d", upgradeHeight),
 		"--upgrade-info=\"\"",
@@ -74,7 +74,7 @@ func (m *Manager) CreateSubmitProposalExec(targetVersion, chainID string, upgrad
 		"--yes",
 		"--keyring-backend=test",
 		"--log_format=json",
-		"--fees=500agridiron",
+		"--fees=500afury",
 		"--gas=500000",
 	}
 	// increment proposal counter to use proposal number for deposit && voting
@@ -90,14 +90,14 @@ func (m *Manager) CreateDepositProposalExec(chainID string) (string, error) {
 		"gov",
 		"deposit",
 		fmt.Sprint(m.proposalCounter),
-		"10000000agridiron",
+		"10000000afury",
 		"--from=mykey",
 		fmt.Sprintf("--chain-id=%s", chainID),
 		"-b=block",
 		"--yes",
 		"--keyring-backend=test",
 		"--log_format=json",
-		"--fees=500agridiron",
+		"--fees=500afury",
 		"--gas=500000",
 	}
 
@@ -119,7 +119,7 @@ func (m *Manager) CreateVoteProposalExec(chainID string) (string, error) {
 		"--yes",
 		"--keyring-backend=test",
 		"--log_format=json",
-		"--fees=500agridiron",
+		"--fees=500afury",
 		"--gas=500000",
 	}
 	return m.CreateExec(cmd, m.ContainerID())

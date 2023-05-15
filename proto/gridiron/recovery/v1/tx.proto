@@ -6,7 +6,7 @@ import "cosmos_proto/cosmos.proto";
 import "gridiron/recovery/v1/genesis.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/gridiron/gridiron/v11/x/recovery/types";
+option go_package = "github.com/gridchain/gridiron/v11/x/recovery/types";
 
 // Msg defines the recovery Msg service.
 service Msg {

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package ibctesting
 
@@ -35,9 +35,9 @@ import (
 
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 
-	ethermint "github.com/gridiron/ethermint/types"
-	gridironapp "github.com/gridiron/gridiron/v11/app"
-	gridiron "github.com/gridiron/gridiron/v11/types"
+	ethermint "github.com/gridchain/ethermint/types"
+	gridironapp "github.com/gridchain/gridiron/v11/app"
+	gridiron "github.com/gridchain/gridiron/v11/types"
 )
 
 var DefaultTestingAppInit func() (ibcgotesting.TestingApp, map[string]json.RawMessage) = gridironapp.SetupTestingApp
@@ -81,7 +81,7 @@ func SetupWithGenesisValSet(t *testing.T, valSet *tmtypes.ValidatorSet, genAccs 
 
 	// set validators and delegations
 	stakingParams := stakingtypes.DefaultParams()
-	// set bond demon to be agridiron
+	// set bond demon to be afury
 	stakingParams.BondDenom = gridiron.BaseDenom
 	stakingGenesis := stakingtypes.NewGenesisState(stakingParams, validators, delegations)
 	genesisState[stakingtypes.ModuleName] = app.AppCodec().MustMarshalJSON(stakingGenesis)

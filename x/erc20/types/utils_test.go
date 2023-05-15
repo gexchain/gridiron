@@ -59,14 +59,14 @@ func TestEqualMetadata(t *testing.T) {
 		{
 			"equal metadata",
 			banktypes.Metadata{
-				Base:        "agridiron",
+				Base:        "afury",
 				Display:     "gridiron",
 				Name:        "Gridiron",
 				Symbol:      "GRIDIRON",
 				Description: "EVM, staking and governance denom of Gridiron",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "agridiron",
+						Denom:    "afury",
 						Exponent: 0,
 						Aliases:  []string{"atto gridiron"},
 					},
@@ -77,14 +77,14 @@ func TestEqualMetadata(t *testing.T) {
 				},
 			},
 			banktypes.Metadata{
-				Base:        "agridiron",
+				Base:        "afury",
 				Display:     "gridiron",
 				Name:        "Gridiron",
 				Symbol:      "GRIDIRON",
 				Description: "EVM, staking and governance denom of Gridiron",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "agridiron",
+						Denom:    "afury",
 						Exponent: 0,
 						Aliases:  []string{"atto gridiron"},
 					},
@@ -99,24 +99,24 @@ func TestEqualMetadata(t *testing.T) {
 		{
 			"different base field",
 			banktypes.Metadata{
-				Base: "agridiron",
+				Base: "afury",
 			},
 			banktypes.Metadata{
-				Base: "tagridiron",
+				Base: "tafury",
 			},
 			true,
 		},
 		{
 			"different denom units length",
 			banktypes.Metadata{
-				Base:        "agridiron",
+				Base:        "afury",
 				Display:     "gridiron",
 				Name:        "Gridiron",
 				Symbol:      "GRIDIRON",
 				Description: "EVM, staking and governance denom of Gridiron",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "agridiron",
+						Denom:    "afury",
 						Exponent: 0,
 						Aliases:  []string{"atto gridiron"},
 					},
@@ -127,14 +127,14 @@ func TestEqualMetadata(t *testing.T) {
 				},
 			},
 			banktypes.Metadata{
-				Base:        "agridiron",
+				Base:        "afury",
 				Display:     "gridiron",
 				Name:        "Gridiron",
 				Symbol:      "GRIDIRON",
 				Description: "EVM, staking and governance denom of Gridiron",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "agridiron",
+						Denom:    "afury",
 						Exponent: 0,
 						Aliases:  []string{"atto gridiron"},
 					},
@@ -145,14 +145,14 @@ func TestEqualMetadata(t *testing.T) {
 		{
 			"different denom units",
 			banktypes.Metadata{
-				Base:        "agridiron",
+				Base:        "afury",
 				Display:     "gridiron",
 				Name:        "Gridiron",
 				Symbol:      "GRIDIRON",
 				Description: "EVM, staking and governance denom of Gridiron",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "agridiron",
+						Denom:    "afury",
 						Exponent: 0,
 						Aliases:  []string{"atto gridiron"},
 					},
@@ -168,14 +168,14 @@ func TestEqualMetadata(t *testing.T) {
 				},
 			},
 			banktypes.Metadata{
-				Base:        "agridiron",
+				Base:        "afury",
 				Display:     "gridiron",
 				Name:        "Gridiron",
 				Symbol:      "GRIDIRON",
 				Description: "EVM, staking and governance denom of Gridiron",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "agridiron",
+						Denom:    "afury",
 						Exponent: 0,
 						Aliases:  []string{"atto gridiron"},
 					},
@@ -231,14 +231,14 @@ func TestEqualAliases(t *testing.T) {
 		},
 		{
 			"same values, unsorted",
-			[]string{"atto gridiron", "agridiron"},
-			[]string{"agridiron", "atto gridiron"},
+			[]string{"atto gridiron", "afury"},
+			[]string{"afury", "atto gridiron"},
 			false,
 		},
 		{
 			"same values, sorted",
-			[]string{"agridiron", "atto gridiron"},
-			[]string{"agridiron", "atto gridiron"},
+			[]string{"afury", "atto gridiron"},
+			[]string{"afury", "atto gridiron"},
 			true,
 		},
 	}

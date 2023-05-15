@@ -9,7 +9,7 @@ Quickly sync your node with Gridiron using a snapshot or serve queries for prev 
 ## List of Snapshots and Archives
 
 Below is a list of publicly available snapshots that you can use to sync with the Gridiron mainnet and
-archived [9001-1 mainnet](https://github.com/gridiron/mainnet/tree/main/gridiron_9001-1):
+archived [9001-1 mainnet](https://github.com/gridchain/mainnet/tree/main/gridiron_9001-1):
 
 <!-- markdown-link-check-disable -->
 
@@ -29,7 +29,7 @@ archived [9001-1 mainnet](https://github.com/gridiron/mainnet/tree/main/gridiron
 | ---------------|---------------------------------------------------------------------------------|
 | `Nodes Guru`   | [snapshots.nodes.guru/gridiron_9001-1](https://snapshots.nodes.guru/gridiron_9001-1/)                                    |
 | `Polkachu`     | [polkachu.com/tendermint_snapshots/gridiron](https://www.polkachu.com/tendermint_snapshots/gridiron)                           |
-| `Forbole`      | [bigdipper.live/gridiron_9001-1](https://s3.bigdipper.live.eu-central-1.linodeobjects.com/gridiron_9001-1.tar.lz4) |
+| `Forbole`      | [bigdipper.live/gridiron_9001-1](https://s3.bigdipper.live.eu-central-1.linodeobjects.com/gridchain_9001-1.tar.lz4) |
 
 To access snapshots and archives, follow the process below (this code snippet is to access a snapshot of the current network, `gridiron_9001-2`, from Nodes Guru):
 

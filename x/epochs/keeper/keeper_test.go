@@ -17,10 +17,10 @@ import (
 	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
 	"github.com/tendermint/tendermint/version"
 
-	evm "github.com/gridiron/ethermint/x/evm/types"
+	evm "github.com/gridchain/ethermint/x/evm/types"
 
-	"github.com/gridiron/gridiron/v11/app"
-	"github.com/gridiron/gridiron/v11/x/epochs/types"
+	"github.com/gridchain/gridiron/v11/app"
+	"github.com/gridchain/gridiron/v11/x/epochs/types"
 )
 
 var denomMint = evm.DefaultEVMDenom

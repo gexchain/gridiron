@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	epochstypes "github.com/gridiron/gridiron/v11/x/epochs/types"
+	epochstypes "github.com/gridchain/gridiron/v11/x/epochs/types"
 )
 
 type ParamsTestSuite struct {

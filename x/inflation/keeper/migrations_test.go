@@ -7,11 +7,11 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/gridiron/ethermint/encoding"
-	"github.com/gridiron/gridiron/v11/app"
-	inflationkeeper "github.com/gridiron/gridiron/v11/x/inflation/keeper"
-	v2types "github.com/gridiron/gridiron/v11/x/inflation/migrations/v2/types"
-	"github.com/gridiron/gridiron/v11/x/inflation/types"
+	"github.com/gridchain/ethermint/encoding"
+	"github.com/gridchain/gridiron/v11/app"
+	inflationkeeper "github.com/gridchain/gridiron/v11/x/inflation/keeper"
+	v2types "github.com/gridchain/gridiron/v11/x/inflation/migrations/v2/types"
+	"github.com/gridchain/gridiron/v11/x/inflation/types"
 )
 
 type mockSubspace struct {

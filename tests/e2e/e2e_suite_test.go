@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/gridiron/gridiron/v11/tests/e2e/upgrade"
+	"github.com/gridchain/gridiron/v11/tests/e2e/upgrade"
 )
 
 const (

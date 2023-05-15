@@ -12,15 +12,15 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Gridiron packages. If not, see https://github.com/gridiron/gridiron/blob/main/LICENSE
+// along with the Gridiron packages. If not, see https://github.com/gridchain/gridiron/blob/main/LICENSE
 
 package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	v3 "github.com/gridiron/gridiron/v11/x/erc20/migrations/v3"
-	"github.com/gridiron/gridiron/v11/x/erc20/types"
+	v3 "github.com/gridchain/gridiron/v11/x/erc20/migrations/v3"
+	"github.com/gridchain/gridiron/v11/x/erc20/types"
 )
 
 var _ module.MigrationHandler = Migrator{}.Migrate2to3
